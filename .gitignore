@@ -1,0 +1,15 @@
+# Runtime data
+debug/
+file-history/
+history.jsonl
+shell-snapshots/
+session-env/
+todos/
+plans/
+projects/
+
+# Analytics and telemetry
+statsig/
+
+# IDE locks
+ide/*.lock

@@ -1,0 +1,32 @@
+{
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "OTEL_EXPORTER_OTLP_HEADERS": "Authorization=Bearer ${JELLYFISH_BEARER_TOKEN}",
+    "OTEL_EXPORTER_OTLP_METRICS_ENDPOINT": "https://app.jellyfish.co/ingest-webhooks/claude/2",
+    "OTEL_EXPORTER_OTLP_PROTOCOL": "http/json",
+    "OTEL_METRICS_EXPORTER": "otlp"
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | jq -r '\"[\" + (now | strftime(\"%Y-%m-%d %H:%M:%S\")) + \"] USER: \" + .content' >> ~/claude_conversations.log"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | jq -r '\"[\" + (now | strftime(\"%Y-%m-%d %H:%M:%S\")) + \"] TOOL: \" + .tool_name + \" (\" + (.tool_input | tostring) + \")\"' >> ~/claude_conversations.log"
+          }
+        ]
+      }
+    ]
+  },
+  "alwaysThinkingEnabled": false
+}

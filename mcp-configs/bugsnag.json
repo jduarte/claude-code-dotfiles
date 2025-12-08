@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "smartbear-bugsnag": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "-e", "BUGSNAG_AUTH_TOKEN", "smartbear-mcp-local"],
+      "env": {
+        "BUGSNAG_AUTH_TOKEN": "${MCP__BUGSNAG_AUTH_TOKEN}"
+      }
+    }
+  }
+}

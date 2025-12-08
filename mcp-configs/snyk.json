@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "snyk": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "-e", "SNYK_API_KEY", "-e", "SNYK_ORG_ID", "snyk-mcp-local"],
+      "env": {
+        "SNYK_API_KEY": "${MCP__SNYK_API_KEY}",
+        "SNYK_ORG_ID": "${MCP__SNYK_ORG_ID}"
+      }
+    }
+  }
+}
