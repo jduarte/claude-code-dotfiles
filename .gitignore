@@ -13,3 +13,6 @@ statsig/
 
 # IDE locks
 ide/*.lock
+
+# Plugins
+plugins/cache/*
