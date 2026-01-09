@@ -7,6 +7,7 @@ session-env/
 todos/
 plans/
 projects/
+stats-cache.json
 
 # Analytics and telemetry
 statsig/
