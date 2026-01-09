@@ -1,0 +1,11 @@
+{
+  "name": "jduarte-marketplace",
+  "description": "Personal Claude Code plugins",
+  "plugins": [
+    {
+      "name": "salsify-add-reviewer",
+      "description": "Comprehensive ADD (Architecture Design Document) review using multiple specialized agents running in parallel",
+      "source": "./plugins/salsify-add-reviewer"
+    }
+  ]
+}
