@@ -17,3 +17,4 @@ ide/*.lock
 
 # Plugins
 plugins/cache/*
+plugins/install-counts-cache.json
