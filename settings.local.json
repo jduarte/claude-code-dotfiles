@@ -27,6 +27,7 @@
       "Bash(cat:*)",
       "WebSearch",
       "WebFetch",
+      "Fetch",
       "Bash(claude mcp)",
       "Bash(claude mcp:*)",
       "Bash(env)",
