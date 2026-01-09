@@ -1,0 +1,8 @@
+{
+  "name": "salsify-add-reviewer",
+  "version": "2.0.0",
+  "description": "Comprehensive ADD (Architecture Design Document) review using multiple specialized agents running in parallel",
+  "author": {
+    "name": "Salsify Engineering"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "plugins": {
+    "pr-review-toolkit@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/jduarte/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/f1be96f0fb58",
+        "version": "f1be96f0fb58",
+        "installedAt": "2026-01-08T00:48:51.507Z",
+        "lastUpdated": "2026-01-09T09:43:56.691Z",
+        "gitCommitSha": "2eb5c045fb15edd058c1168566091fa1886959fa"
+      }
+    ],
+    "salsify-add-reviewer@local": [
+      {
+        "scope": "user",
+        "installPath": "/Users/jduarte/.claude/plugins/salsify-add-reviewer",
+        "version": "2.0.0",
+        "installedAt": "2026-01-09T10:50:00.000Z",
+        "lastUpdated": "2026-01-09T10:50:00.000Z"
+      }
+    ],
+    "safety-net@cc-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/jduarte/.claude/plugins/cache/cc-marketplace/safety-net/0.4.1",
+        "version": "0.4.1",
+        "installedAt": "2026-01-09T11:30:13.636Z",
+        "lastUpdated": "2026-01-09T11:30:13.636Z",
+        "gitCommitSha": "5ab8fb6f21076776b23d07984ff445c301ef922e"
+      }
+    ],
+    "salsify-add-reviewer@jduarte-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/jduarte/.claude/plugins/cache/jduarte-marketplace/salsify-add-reviewer/2.0.0",
+        "version": "2.0.0",
+        "installedAt": "2026-01-09T11:53:20.189Z",
+        "lastUpdated": "2026-01-09T11:53:20.189Z",
+        "gitCommitSha": "b9fc65b875887a483e4f41d825aac629e1f188e9"
+      }
+    ]
+  }
+}

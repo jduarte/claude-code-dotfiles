@@ -1,0 +1,197 @@
+{
+  "version": "2.0",
+  "description": "Custom review rules for Salsify ADD reviews. Rules are organized by stage and agent.",
+  "severity_levels": {
+    "error": "Must be fixed before stage can be approved",
+    "warning": "Should be addressed but not a blocker",
+    "suggestion": "Nice to have improvement"
+  },
+  "rules": {
+    "context": [
+      {
+        "id": "ctx-001",
+        "name": "Security review trigger",
+        "description": "ADDs involving authentication, authorization, or PII should tag Security team",
+        "severity": "warning",
+        "enabled": true,
+        "keywords": ["authentication", "authorization", "PII", "security", "encryption", "GDPR", "SOC2"],
+        "agent": "security-compliance-reviewer"
+      },
+      {
+        "id": "ctx-002",
+        "name": "Problem clarity check",
+        "description": "Problem statement should be understandable to unfamiliar reviewers",
+        "severity": "error",
+        "enabled": true,
+        "agent": "format-compliance-reviewer"
+      },
+      {
+        "id": "ctx-003",
+        "name": "Salsify architecture alignment",
+        "description": "Problem should clearly identify which Salsify system/domain it affects",
+        "severity": "warning",
+        "enabled": true,
+        "agent": "engineering-exhaustiveness-reviewer"
+      }
+    ],
+    "options_analysis": [
+      {
+        "id": "opt-001",
+        "name": "Cost threshold for XL options",
+        "description": "Options estimated as XL should include rough eng-weeks estimate",
+        "severity": "warning",
+        "enabled": true,
+        "agent": "engineering-exhaustiveness-reviewer"
+      },
+      {
+        "id": "opt-002",
+        "name": "Trade-off completeness",
+        "description": "Each option must document trade-offs, not just benefits",
+        "severity": "error",
+        "enabled": true,
+        "agent": "format-compliance-reviewer"
+      },
+      {
+        "id": "opt-003",
+        "name": "Decision rationale",
+        "description": "Chosen option must have clear rationale explaining why it was selected",
+        "severity": "error",
+        "enabled": true,
+        "agent": "format-compliance-reviewer"
+      }
+    ],
+    "solution_design": [
+      {
+        "id": "sol-001",
+        "name": "Monitoring requirement",
+        "description": "New services must describe monitoring/alerting approach",
+        "severity": "warning",
+        "enabled": true,
+        "keywords": ["new service", "microservice", "API"],
+        "agent": "implementation-readiness-analyzer"
+      },
+      {
+        "id": "sol-002",
+        "name": "ADR identification",
+        "description": "API changes or schema changes should identify needed ADRs",
+        "severity": "warning",
+        "enabled": true,
+        "keywords": ["API", "schema", "database", "contract"],
+        "agent": "implementation-readiness-analyzer"
+      },
+      {
+        "id": "sol-003",
+        "name": "Rollout strategy",
+        "description": "Changes affecting production should describe rollout approach",
+        "severity": "warning",
+        "enabled": true,
+        "agent": "implementation-readiness-analyzer"
+      },
+      {
+        "id": "sol-004",
+        "name": "Security section for sensitive features",
+        "description": "ADDs touching auth, data, or external integrations need explicit security section",
+        "severity": "error",
+        "enabled": true,
+        "keywords": ["authentication", "authorization", "PII", "external", "third-party", "API"],
+        "agent": "security-compliance-reviewer"
+      }
+    ],
+    "cross_cutting": [
+      {
+        "id": "cc-001",
+        "name": "Core team review for Growth",
+        "description": "ADDs from Growth teams should include Core engineer as Agree reviewer",
+        "severity": "suggestion",
+        "enabled": true,
+        "applies_to_teams": ["growth", "workflow"],
+        "agent": "reviewer-status-tracker"
+      },
+      {
+        "id": "cc-002",
+        "name": "Catalog entry required",
+        "description": "All ADDs must have a catalog entry linked at the top",
+        "severity": "error",
+        "enabled": true,
+        "agent": "cross-reference-validator"
+      },
+      {
+        "id": "cc-003",
+        "name": "Jira link required",
+        "description": "ADDs should link to related Jira tickets",
+        "severity": "warning",
+        "enabled": true,
+        "agent": "cross-reference-validator"
+      },
+      {
+        "id": "cc-004",
+        "name": "Tag format validation",
+        "description": "Tags must be in lower-kebab-case format",
+        "severity": "warning",
+        "enabled": true,
+        "agent": "cross-reference-validator"
+      },
+      {
+        "id": "cc-005",
+        "name": "Unresolved comments blocker",
+        "description": "Agree reviewers' unresolved comments block stage progression",
+        "severity": "error",
+        "enabled": true,
+        "agent": "comment-discussion-analyzer"
+      },
+      {
+        "id": "cc-006",
+        "name": "Individual reviewer tagging",
+        "description": "Tag specific people, not team names, as reviewers",
+        "severity": "warning",
+        "enabled": true,
+        "agent": "reviewer-status-tracker"
+      }
+    ]
+  },
+  "agent_configs": {
+    "format-compliance-reviewer": {
+      "strict_mode": false,
+      "check_placeholders": true
+    },
+    "engineering-exhaustiveness-reviewer": {
+      "ask_clarifying_questions": true,
+      "batch_questions": true
+    },
+    "comment-discussion-analyzer": {
+      "include_resolved_threads": true,
+      "stale_threshold_days": 7
+    },
+    "reviewer-status-tracker": {
+      "stale_approval_days": 14,
+      "max_agree_reviewers_warning": 5
+    },
+    "cross-reference-validator": {
+      "validate_jira_links": true,
+      "validate_confluence_links": true,
+      "check_broken_links": true
+    },
+    "security-compliance-reviewer": {
+      "require_security_section_on_keywords": true,
+      "security_keywords": ["auth", "PII", "encryption", "GDPR", "SOC2", "credential", "password", "token", "API key"]
+    },
+    "implementation-readiness-analyzer": {
+      "require_adr_for_api_changes": true,
+      "require_monitoring_for_new_services": true,
+      "require_rollout_plan_for_production": true
+    }
+  },
+  "usage": {
+    "adding_rules": "Add new rule objects to the appropriate stage array. Set 'enabled': true to activate.",
+    "rule_format": {
+      "id": "Unique identifier (stage-prefix-number)",
+      "name": "Short descriptive name",
+      "description": "What the rule checks for",
+      "severity": "error | warning | suggestion",
+      "enabled": "true | false",
+      "keywords": "(optional) Trigger words to look for",
+      "applies_to_teams": "(optional) Limit rule to specific teams",
+      "agent": "(optional) Which agent primarily enforces this rule"
+    }
+  }
+}
