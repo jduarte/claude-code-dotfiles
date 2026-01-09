@@ -6,6 +6,7 @@
     "OTEL_EXPORTER_OTLP_PROTOCOL": "http/json",
     "OTEL_METRICS_EXPORTER": "otlp"
   },
+  "model": "opus",
   "hooks": {
     "UserPromptSubmit": [
       {
@@ -27,5 +28,10 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "pr-review-toolkit@claude-plugins-official": true,
+    "salsify-add-reviewer": true,
+    "safety-net@cc-marketplace": true
   }
 }
