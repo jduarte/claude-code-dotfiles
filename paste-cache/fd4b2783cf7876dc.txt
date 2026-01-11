@@ -1,0 +1,17 @@
+2026-01-11T02:53:35.044Z [ERROR] MCP server "salsify-glossary" Server stderr: Failed to start server: Error: The module '/Users/jduarte/.claude/salsify-glossary/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+was compiled against a different Node.js version using
+NODE_MODULE_VERSION 115. This version of Node.js requires
+NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+the module (for instance, using `npm rebuild` or `npm install`).
+    at Object..node (node:internal/modules/cjs/loader:1920:18)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at bindings (/Users/jduarte/.claude/salsify-glossary/node_modules/bindings/bindings.js:112:48)
+    at new Database (/Users/jduarte/.claude/salsify-glossary/node_modules/better-sqlite3/lib/database.js:48:64)
+    at getDatabase (file:///Users/jduarte/.claude/salsify-glossary/dist/database.js:17:14) {
+  code: 'ERR_DLOPEN_FAILED'
+}

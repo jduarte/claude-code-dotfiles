@@ -6,6 +6,7 @@ dist/
 
 # Database (generated from JSON)
 db/
+data/sources/*
 
 # Logs
 logs/

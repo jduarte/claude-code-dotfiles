@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "salsify-glossary": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "-e", "HOME=/app",
+        "-v", "/Users/jduarte/.claude/salsify-glossary/data:/app/.claude/salsify-glossary/data:ro",
+        "-v", "salsify-glossary-db:/app/.claude/salsify-glossary/db",
+        "salsify-glossary-mcp-local"
+      ]
+    }
+  }
+}

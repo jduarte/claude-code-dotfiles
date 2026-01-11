@@ -8,7 +8,7 @@ import chokidar from 'chokidar';
 import Ajv, { ErrorObject } from 'ajv';
 import addFormats from 'ajv-formats';
 import { GlossaryData, Term, SyncResult } from './types.js';
-import { bulkUpsertTerms, getAllTerms, deleteTerm, getDatabase } from './database.js';
+import { bulkUpsertTerms, getAllTerms, deleteTerm, getDatabase, reopenDatabase } from './database.js';
 
 const DATA_DIR = path.join(process.env.HOME || '', '.claude', 'salsify-glossary', 'data');
 const GLOSSARY_PATH = path.join(DATA_DIR, 'glossary.json');
@@ -147,6 +147,9 @@ export function performSync(): SyncResult {
   syncInProgress = true;
 
   try {
+    // Reopen database to ensure fresh connection sees latest WAL changes
+    reopenDatabase();
+
     const data = loadGlossaryFile();
 
     if (!data) {

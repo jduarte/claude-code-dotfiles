@@ -33,6 +33,11 @@ export function closeDatabase(): void {
   }
 }
 
+export function reopenDatabase(): void {
+  closeDatabase();
+  getDatabase();
+}
+
 function initializeSchema(database: Database.Database): void {
   // Main terms table
   database.exec(`
