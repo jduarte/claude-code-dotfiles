@@ -1,0 +1,1806 @@
+{
+  "$schema": "./glossary.schema.json",
+  "terms": [
+    {
+      "acronym": "ADR",
+      "name": "Account Development Representative",
+      "description": "Partners with Enterprise and Strategic Upsell Sales Teams. One of the two types of XDRs at Salsify.",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["XDR", "BDR", "AE"]
+    },
+    {
+      "acronym": "AE",
+      "name": "Account Executive",
+      "description": "Sales professional responsible for managing customer relationships and closing deals",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["SAE", "SDR", "CSM"]
+    },
+    {
+      "acronym": "Agencies",
+      "name": "Agencies",
+      "description": "Partners that create content (like Onespace)",
+      "category": "Partners",
+      "owner": "Partnerships Team",
+      "relatedTerms": ["GSI", "RSI", "GEO"]
+    },
+    {
+      "acronym": "AM",
+      "name": "Account Manager",
+      "description": "Post-onboarding point of contact at Salsify who manages customer relationships",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["CSM", "AE"]
+    },
+    {
+      "acronym": "AMS",
+      "name": "Amazon Marketing Services",
+      "description": "Provides tools to vendors to help them stand out against their competitors and drive traffic to their product pages",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC", "ASC", "ASIN"]
+    },
+    {
+      "acronym": "API",
+      "name": "Application Programming Interface",
+      "description": "A software intermediary that allows two applications to talk to each other. The messenger that delivers your request to the provider and returns the response.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["REST", "SDK", "ETL"],
+      "links": [
+        {"url": "https://developers.salsify.com", "description": "Salsify Developer Portal"}
+      ]
+    },
+    {
+      "acronym": "ARA",
+      "name": "Amazon Retail Analytics",
+      "description": "A tool provided by Amazon to help brands understand and improve their operational performance. Two tiers: Basic (automatic) and Premium (additional fee).",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC", "ASC"]
+    },
+    {
+      "acronym": "ARR",
+      "name": "Annual Recurring Revenue",
+      "description": "The value of the recurring revenue of a business's term subscriptions normalized for a single calendar year",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["DRR", "GDRR", "CRR"]
+    },
+    {
+      "acronym": "ASC",
+      "name": "Amazon Seller Central",
+      "description": "The web interface used by brands and merchants to market and sell their products directly to Amazon's customers through their marketplaces. Third-party (3P) seller system.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC", "3P", "FBA"]
+    },
+    {
+      "acronym": "ASIN",
+      "name": "Amazon Standard Identification Number",
+      "description": "Unique blocks of 10 numbers and/or letters that identify an item on Amazon. For books, ASIN equals ISBN; for other products, a separate ASIN is created.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "UPC", "SKU"]
+    },
+    {
+      "acronym": "AVC",
+      "name": "Amazon Vendor Central",
+      "description": "The web interface used by manufacturers and distributors to sell product to Amazon. First-party (1P) sellers. Products show 'ships from and sold by Amazon.com'.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["ASC", "1P", "AFS"]
+    },
+    {
+      "acronym": "AFS",
+      "name": "Amazon Feed Specifications",
+      "description": "A data interchange standard established by Amazon to enable suppliers to automate item lifecycle management and procurement. Enables API functionality for Amazon Vendor Central.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC", "API"]
+    },
+    {
+      "acronym": "A10",
+      "name": "Amazon A10",
+      "description": "Amazon's search algorithm. Operates as a flywheel - the more robust a product page's content, the better sales rank, which drives more conversion in a positive feedback loop.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["SEO", "PDP"]
+    },
+    {
+      "acronym": "A+",
+      "name": "A+ Content",
+      "description": "Enhanced, multimedia brand content on Amazon including high quality images, videos, and comparison charts. Available for 1P vendors. Also called 'Rich Media' or 'Enhanced Content'.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC", "Rich Media", "Enhanced Content"]
+    },
+    {
+      "acronym": "BDR",
+      "name": "Business Development Rep",
+      "description": "Partners with New Business sales team. One of the two types of XDRs at Salsify.",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["XDR", "ADR", "SDR"]
+    },
+    {
+      "acronym": "BCP",
+      "name": "Business Continuity Plan",
+      "description": "Centralized repository for information, tasks, and procedures necessary to facilitate management's decision-making processes and timely responses to any disruptive interruption of normal business operations.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["DR"]
+    },
+    {
+      "acronym": "BISS",
+      "name": "Business Industrial Scientific Supplies",
+      "description": "Amazon abbreviation for the Business, Industrial, and Scientific Supplies category",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC", "ASC"]
+    },
+    {
+      "acronym": "Business Review",
+      "name": "Business Review",
+      "description": "An evaluation of metrics and performance of a supplier program over the previous period. Should be linked to overall strategy and objectives.",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["QBR", "EBR"]
+    },
+    {
+      "acronym": "Buy Box",
+      "name": "Buy Box",
+      "description": "Winning the Buy Box refers to being the vendor chosen to sell your product on a retailer's site. Requires best customer experience via competitive pricing, excellent fulfillment, and good customer service.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["PDP", "1P", "3P"]
+    },
+    {
+      "acronym": "CDN",
+      "name": "Content Delivery Network",
+      "description": "A geographically distributed group of servers that work together to provide fast delivery of Internet content",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["DAM", "API"]
+    },
+    {
+      "acronym": "Channel",
+      "name": "Channel",
+      "description": "Used to publish products. Has three components: choice of target schema, product selection, and mappings. Determines where products get published.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Target Schema", "Mappings", "Syndication"]
+    },
+    {
+      "acronym": "CommerceXM",
+      "name": "Commerce Experience Management",
+      "description": "A comprehensive system of record for a brand's product content. Unifies PXM capabilities with omni-channel syndication requirements for selling across retailer and D2C ecosystems.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PXM", "PIM", "DAM"]
+    },
+    {
+      "acronym": "CPG",
+      "name": "Consumer Packaged Goods",
+      "description": "Products that are sold quickly and at relatively low cost. Examples include food, beverages, cosmetics, and cleaning products. One of Salsify's verticals.",
+      "category": "Industry",
+      "owner": "Sales Team",
+      "relatedTerms": ["FMCG", "Retail"]
+    },
+    {
+      "acronym": "CPQ",
+      "name": "Configure Price Quote",
+      "description": "Software that helps sales teams generate accurate quotes for configurable products and services",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["AE", "SAE"]
+    },
+    {
+      "acronym": "CRR",
+      "name": "Customer Retention Rate",
+      "description": "Metric based on customer counts. One of the metrics used to measure retention (others are GDRR and DRR).",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["DRR", "GDRR", "ARR"]
+    },
+    {
+      "acronym": "CSAT",
+      "name": "Customer Satisfaction Survey",
+      "description": "Survey measuring how well customer expectations are met",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["NPS", "CSM"]
+    },
+    {
+      "acronym": "CSM",
+      "name": "Customer Success Manager",
+      "description": "Helps align on strategic business goals and objectives, focuses on right tactics, puts together programs, and tracks KPIs to measure success.",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["AM", "SAE", "AE"]
+    },
+    {
+      "acronym": "CSP",
+      "name": "Content Service Provider",
+      "description": "A technology partner that helps brand manufacturers streamline the process of getting product data to retailers. Example: Salsify is a CSP for brands to get content to Walmart.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Syndication", "Channel"]
+    },
+    {
+      "acronym": "D2C",
+      "name": "Direct to Consumer",
+      "description": "Business model where brands sell directly to consumers, bypassing traditional retail channels. Also written as DTC.",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["Omnichannel", "Retail"]
+    },
+    {
+      "acronym": "DAM",
+      "name": "Digital Asset Management",
+      "description": "Software that allows organizations to store, organize, find, and share digital assets such as images, videos, audio, presentations. Comes with every Salsify license as platform functionality.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "CDN"],
+      "links": [
+        {"url": "https://www.salsify.com/platform/digital-asset-management", "description": "DAM Overview"}
+      ]
+    },
+    {
+      "acronym": "DIH",
+      "name": "Data Inheritance Hierarchy",
+      "description": "Product Family - represents a means to organize product content while reusing common data across families of products. E.g., clothing: Style > Color > Size",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["DIHL", "PIM"]
+    },
+    {
+      "acronym": "DIHL",
+      "name": "Data Inheritance Hierarchy Level",
+      "description": "A level within a DIH. E.g., in Style -> Color -> Size, Color is a DIHL.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["DIH"]
+    },
+    {
+      "acronym": "DR",
+      "name": "Disaster Recovery",
+      "description": "A documented process including procedures or steps (runbook) to recover business and production infrastructure in the event of a disaster.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["BCP"]
+    },
+    {
+      "acronym": "DRR",
+      "name": "Dollar Retention Rate",
+      "description": "Based on ARR (included Upsell). One of the metrics used to measure retention (others are CRR and GDRR).",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["CRR", "GDRR", "ARR"]
+    },
+    {
+      "acronym": "DSI",
+      "name": "Digital Shelf Institute",
+      "description": "Salsify's Thought Leadership community where you don't have to be a customer to learn about the industry",
+      "category": "Marketing",
+      "owner": "Marketing Team",
+      "relatedTerms": ["GTM"]
+    },
+    {
+      "acronym": "DSV",
+      "name": "Drop Ship Vendor",
+      "description": "A vendor that ships products directly to customers on behalf of a retailer",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["3P", "FBA"]
+    },
+    {
+      "acronym": "EAN",
+      "name": "European Article Number",
+      "description": "A 13-digit barcoding standard (12 data + 1 check). Now renamed International Article Number. Similar to ASIN or GTIN.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "UPC", "ASIN"]
+    },
+    {
+      "acronym": "EAV",
+      "name": "Entity-Attribute-Value",
+      "description": "A type of data model applicable to Salsify. Translates to ID, Property, Value.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["PIM"]
+    },
+    {
+      "acronym": "EBR",
+      "name": "Executive Business Review",
+      "description": "Also known as QBR (Quarterly Business Review). Strategic review meeting with executive stakeholders.",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["QBR", "Business Review"]
+    },
+    {
+      "acronym": "ELT",
+      "name": "Executive Leadership Team",
+      "description": "The senior leadership team at Salsify",
+      "category": "Organization",
+      "owner": "Executive Team",
+      "relatedTerms": ["V2MOM"]
+    },
+    {
+      "acronym": "Enhanced Content",
+      "name": "Enhanced Content",
+      "description": "Salsify's module that enables creating mobile-responsive enhanced layouts and publishing content-refresh products to syndication partners including Amazon and Walmart.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["A+", "Rich Media", "OXA"]
+    },
+    {
+      "acronym": "ERP",
+      "name": "Enterprise Resource Planning",
+      "description": "Systems/software used by an organization to manage day-to-day activities such as accounting, procurement, project management, and manufacturing. Provides 'single version of the truth'.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "MDM", "ETL"]
+    },
+    {
+      "acronym": "ES",
+      "name": "Elasticsearch",
+      "description": "The main search engine behind the indexing service, powers product searchability in Salsify",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["API"]
+    },
+    {
+      "acronym": "ETL",
+      "name": "Extract Transform Load",
+      "description": "The process of extracting data from a source database, formatting (transforming) it to meet system needs, and exporting (loading) it to a destination database.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["API", "ERP", "MDM"]
+    },
+    {
+      "acronym": "FBA",
+      "name": "Fulfillment by Amazon",
+      "description": "Amazon's fulfillment service where Amazon stores and ships products on behalf of sellers. Different from Fulfillment by Merchant.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["ASC", "3P"]
+    },
+    {
+      "acronym": "FE",
+      "name": "Field Enablement",
+      "description": "Team or function focused on enabling field sales teams with tools, training, and resources",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["GTM", "AE"]
+    },
+    {
+      "acronym": "FMCG",
+      "name": "Fast Moving Consumer Goods",
+      "description": "Products sold quickly and at relatively low cost. Some are highly perishable (meats, fruits, dairy), others have high turnover (pre-packaged foods, soft drinks, toiletries).",
+      "category": "Industry",
+      "owner": "Sales Team",
+      "relatedTerms": ["CPG", "Retail"]
+    },
+    {
+      "acronym": "FLM",
+      "name": "Frontline Manager",
+      "description": "First-level manager who directly manages individual contributors",
+      "category": "Organization",
+      "owner": "People Team",
+      "relatedTerms": ["ELT"]
+    },
+    {
+      "acronym": "FPO",
+      "name": "Front Page Offer",
+      "description": "Product placement or promotional offer on the front page of a retailer's website",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["PDP"]
+    },
+    {
+      "acronym": "FTP",
+      "name": "File Transfer Protocol",
+      "description": "A standard network protocol used to transfer computer files between a client and server. FTP servers allow files to be accessed by unique URL.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["SFTP", "API"]
+    },
+    {
+      "acronym": "Full Flat",
+      "name": "Full Flat",
+      "description": "The term used for the final print layout of a product's packaging. Generally the print layout for all information on the final product (cans, jars, trays). Can be STITCHED or UNSTITCHED images.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["DAM"]
+    },
+    {
+      "acronym": "GDRR",
+      "name": "Gross Dollar Retention Rate",
+      "description": "Based on ARR. One of the metrics used to measure retention (others are CRR and DRR).",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["CRR", "DRR", "ARR"]
+    },
+    {
+      "acronym": "GDPR",
+      "name": "General Data Protection Regulation",
+      "description": "EU legislation that updates and unifies data privacy laws. Applies to companies with EU presence or that offer goods/services to EU residents. Went into effect May 25, 2018.",
+      "category": "Security",
+      "owner": "Legal Team",
+      "relatedTerms": ["Privacy Shield", "SOC"]
+    },
+    {
+      "acronym": "GDSN",
+      "name": "Global Data Synchronization Network",
+      "description": "An internet-based, interconnected network of interoperable data pools and a global registry (GS1 Global Registry) that enables companies to exchange standardized supply chain data.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GS1", "GTIN", "GLN"]
+    },
+    {
+      "acronym": "GEO",
+      "name": "GEO Partners",
+      "description": "Up and coming partners that aren't RSI, GSI, or Agency partners",
+      "category": "Partners",
+      "owner": "Partnerships Team",
+      "relatedTerms": ["RSI", "GSI", "Agencies"]
+    },
+    {
+      "acronym": "GLN",
+      "name": "Global Location Number",
+      "description": "A unique number assigned to locations to enable worldwide identification. Part of GS1 systems. Used to identify physical locations or legal entities.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "GS1", "GDSN"]
+    },
+    {
+      "acronym": "GPC",
+      "name": "Global Product Classification",
+      "description": "Classifies products by grouping them into categories based on essential properties and relationships. Offers a universal set of standards for products.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GS1", "GTIN"]
+    },
+    {
+      "acronym": "GS1",
+      "name": "GS1",
+      "description": "An international not-for-profit organization that maintains the only global system for bar coding and standardized identification of products, assets, services, places and organizations.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "GLN", "GDSN", "GPC"]
+    },
+    {
+      "acronym": "GSI",
+      "name": "Global Solution Integrators",
+      "description": "Partners like Accenture, Deloitte, big consulting firms",
+      "category": "Partners",
+      "owner": "Partnerships Team",
+      "relatedTerms": ["RSI", "GEO", "Agencies"]
+    },
+    {
+      "acronym": "GTM",
+      "name": "Go to Market",
+      "description": "Strategy that allows a company to deliver its unique value proposition to customers and achieve competitive advantage",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["FE", "AE"]
+    },
+    {
+      "acronym": "GTIN",
+      "name": "Global Trade Item Number",
+      "description": "A globally unique 14-digit number used to uniquely identify trade items, products, or services. Can be used to identify all trade items in the supply chain.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["UPC", "EAN", "ASIN", "SKU"]
+    },
+    {
+      "acronym": "Headless Commerce",
+      "name": "Headless Commerce",
+      "description": "E-commerce architecture where the front-end is decoupled from back-end commerce functionality. Can update/edit without interfering with front-end.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["API", "D2C"]
+    },
+    {
+      "acronym": "HPP",
+      "name": "Hosted Product Page",
+      "description": "Enables retailers to display detailed product information based on platform data (text, picture, video, recipe). Generated on servers and called by retailers on their website.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PDP", "Enhanced Content"]
+    },
+    {
+      "acronym": "ICP",
+      "name": "Ideal Customer Profile",
+      "description": "Description of the type of company that would get the most value from your product or service",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["AE", "SDR"]
+    },
+    {
+      "acronym": "IDS",
+      "name": "Intrusion Detection System",
+      "description": "A device or software application that monitors network/systems for malicious activity or policy violations. Different from IPS (Intrusion Prevention System).",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC", "NIST"]
+    },
+    {
+      "acronym": "IR",
+      "name": "Incident Response",
+      "description": "An organized approach to addressing and managing the aftermath of a security breach or cyberattack. Goal is to limit damage and reduce recovery time and costs.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["DR", "BCP"]
+    },
+    {
+      "acronym": "ISO",
+      "name": "International Organization for Standardization",
+      "description": "An independent, non-governmental international organization that develops standards to ensure quality, safety, and efficiency of products, services, and systems.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC", "NIST"]
+    },
+    {
+      "acronym": "JSON",
+      "name": "JavaScript Object Notation",
+      "description": "A plain-text data format primarily developed for JavaScript, now widely used across the internet in modern web APIs.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["API", "XML"]
+    },
+    {
+      "acronym": "M18t",
+      "name": "Multilingual Content",
+      "description": "Abbreviation for multilingual content (m + 18 letters + t = multilingualization)",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM"]
+    },
+    {
+      "acronym": "MAU",
+      "name": "Monthly Average Users",
+      "description": "Metric tracking the average number of users engaging with a product each month",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["NPS"]
+    },
+    {
+      "acronym": "MDM",
+      "name": "Master Data Management",
+      "description": "The effort made by an organization to create one master source for all data. Includes data cleansing, transformation, and integration capabilities.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "ERP", "ETL"]
+    },
+    {
+      "acronym": "MWG",
+      "name": "MyWebGrocer",
+      "description": "A leading software and digital media company connecting Retailers, Manufacturers and Consumers through modular products and services.",
+      "category": "Partners",
+      "owner": "Product Team",
+      "relatedTerms": ["CSP"]
+    },
+    {
+      "acronym": "NIS",
+      "name": "New Item Setup",
+      "description": "Retailer process to add a new product they haven't received product information for before.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["Content Refresh", "Item Setup Sheets"]
+    },
+    {
+      "acronym": "NIST",
+      "name": "National Institute of Standards and Technology",
+      "description": "US Department of Commerce organization that develops information technology best practices including a framework for cybersecurity.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC", "ISO"]
+    },
+    {
+      "acronym": "NPS",
+      "name": "Net Promoter Score",
+      "description": "Measures how well you're being perceived by audience. Scale: 0-6 detractors, 7-8 passive, 9-10 promoters. Passives don't count.",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["CSAT", "CSM"]
+    },
+    {
+      "acronym": "NRQL",
+      "name": "New Relic Query Language",
+      "description": "Used to gather and monitor metrics about systems in New Relic",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["API"]
+    },
+    {
+      "acronym": "OBX",
+      "name": "Omnichannel Buying Experience",
+      "description": "The experience of purchasing products across multiple channels seamlessly",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Omnichannel", "D2C"]
+    },
+    {
+      "acronym": "Omnichannel",
+      "name": "Omnichannel",
+      "description": "A cross-channel strategy to improve customer experience. Channels cooperate together so consumers have one seamless experience across all platforms (in store, retail sites, D2C sites).",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["OBX", "D2C", "Syndication"]
+    },
+    {
+      "acronym": "OMS",
+      "name": "Order Management System",
+      "description": "Software that organizes and facilitates order fulfillment process across channels. Brings together order processing, customer service, inventory/warehouse management, and accounting.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["ERP", "Inventory"]
+    },
+    {
+      "acronym": "OXA",
+      "name": "Open Experience Alliance",
+      "description": "A growing consortium of 85+ brands that collaborates with leading retailers to power an open ecosystem delivering the best possible digital experience for consumers.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Enhanced Content", "Syndication"]
+    },
+    {
+      "acronym": "PAM",
+      "name": "Partner Account Manager",
+      "description": "Drives new partner business into the pipeline",
+      "category": "Partners",
+      "owner": "Partnerships Team",
+      "relatedTerms": ["PMS", "GSI", "RSI"]
+    },
+    {
+      "acronym": "PCM",
+      "name": "Product Content Management",
+      "description": "Refers to the digital content lifecycle, from creation to storage to deletion. Content can be copy, images, video, etc.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "DAM", "PXM"]
+    },
+    {
+      "acronym": "PDP",
+      "name": "Product Detail Page",
+      "description": "A web page on an eCommerce site that presents a description about a specific product. Includes size, color, price, shipping info, reviews, etc.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Buy Box", "SEO", "A+"]
+    },
+    {
+      "acronym": "PGC",
+      "name": "Professional Growth Conversation",
+      "description": "Typically done every six months at Salsify within the CS, product, and Engineering team",
+      "category": "Organization",
+      "owner": "People Team",
+      "relatedTerms": []
+    },
+    {
+      "acronym": "PIA",
+      "name": "Privacy Impact Assessment",
+      "description": "A GDPR requirement used to identify and reduce privacy risks. Aids in designing efficient processes for handling personal data.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["GDPR", "Privacy Policy"]
+    },
+    {
+      "acronym": "PIM",
+      "name": "Product Information Management",
+      "description": "A central repository that stores product information like marketing copy, feature descriptions, and logistics details. Provides data brands and retailers need to sell across the digital ecosystem.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["DAM", "PXM", "MDM", "PCM"],
+      "links": [
+        {"url": "https://www.salsify.com/platform/product-information-management", "description": "PIM Overview"}
+      ]
+    },
+    {
+      "acronym": "PIP",
+      "name": "Product Index Page",
+      "description": "The main Salsify page when you log into the app that lays out all your products.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PDP"]
+    },
+    {
+      "acronym": "PLM",
+      "name": "Product Life Cycle Management",
+      "description": "A process supported by software that manages products through their entire life cycle from ideation to retirement.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "ERP"]
+    },
+    {
+      "acronym": "PLT",
+      "name": "Product Line Team",
+      "description": "Team organized around a product line",
+      "category": "Organization",
+      "owner": "Product Team",
+      "relatedTerms": ["PM", "PMM"]
+    },
+    {
+      "acronym": "PM",
+      "name": "Product Manager",
+      "description": "Role responsible for the strategy, roadmap, and feature definition of a product",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PMM", "PLT"]
+    },
+    {
+      "acronym": "PMM",
+      "name": "Product Marketing Manager",
+      "description": "Role responsible for product positioning, messaging, and go-to-market strategy",
+      "category": "Marketing",
+      "owner": "Marketing Team",
+      "relatedTerms": ["PM", "GTM"]
+    },
+    {
+      "acronym": "PMS",
+      "name": "Partner Success Manager",
+      "description": "Similar to success managers, but for partners",
+      "category": "Partners",
+      "owner": "Partnerships Team",
+      "relatedTerms": ["PAM", "CSM"]
+    },
+    {
+      "acronym": "PO",
+      "name": "Purchase Order",
+      "description": "A commercial document and first official offer issued by a buyer to a seller indicating types, quantities, and agreed prices for products or services",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["POEF"]
+    },
+    {
+      "acronym": "POEF",
+      "name": "Purchase Order Exception Form",
+      "description": "When a customer requires a PO but can't provide the number yet, they sign this form declaring everything is fine and they're cutting the PO, allowing revenue recognition.",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["PO"]
+    },
+    {
+      "acronym": "POR",
+      "name": "Plan of Record",
+      "description": "Documents what % of pipeline generation specific teams should generate. Based on historicals, market, and capacity.",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["GTM"]
+    },
+    {
+      "acronym": "PPR",
+      "name": "Performance Per Rep",
+      "description": "Metric measuring sales representative performance",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["AE", "SDR"]
+    },
+    {
+      "acronym": "Product Graph",
+      "name": "Product Graph",
+      "description": "Data Engineering initiative to equip GTM operations with digital shelf insights. Includes web scraping to identify accounts likely to buy Salsify and understand their online problems.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["GTM"]
+    },
+    {
+      "acronym": "Properties",
+      "name": "Properties",
+      "description": "Customizable fields that store product information, digital asset information, and metadata. Define what data fields a product can have.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Attributes", "PIM"]
+    },
+    {
+      "acronym": "Pure Play",
+      "name": "Pure Play",
+      "description": "An investor's term for a publicly traded company that focuses resources on only one line of business. Many e-tailers are pure plays.",
+      "category": "Industry",
+      "owner": "Sales Team",
+      "relatedTerms": ["D2C", "Retail"]
+    },
+    {
+      "acronym": "PVal",
+      "name": "Property Value",
+      "description": "A value for a property on a given product",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Properties"]
+    },
+    {
+      "acronym": "PXM",
+      "name": "Product Experience Management",
+      "description": "A platform of product data management solutions at the intersection of a brand's data and commerce, allowing them to manage and optimize product data. Also called ProductXM.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "DAM", "CommerceXM"]
+    },
+    {
+      "acronym": "QA",
+      "name": "Quality Assurance",
+      "description": "Any systematic process of determining whether a product or service meets specified requirements. Establishes and maintains set requirements for developing or manufacturing reliable products.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": []
+    },
+    {
+      "acronym": "QBR",
+      "name": "Quarterly Business Review",
+      "description": "Also known as EBR (Executive Business Review). Regular strategic review meeting with customers.",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["EBR", "Business Review", "CSM"]
+    },
+    {
+      "acronym": "QCs",
+      "name": "Quality Contacts",
+      "description": "Marketing generated contacts that XDRs hunt. Come from a variety of sources (webinars, demos, etc).",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["XDR", "QL"]
+    },
+    {
+      "acronym": "QL",
+      "name": "Qualified Leads",
+      "description": "Leads that have been vetted and meet criteria to be pursued by sales",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["QCs", "SDR"]
+    },
+    {
+      "acronym": "RBP",
+      "name": "Responsible Business Partners",
+      "description": "Those who report to managers (mentioned in context of PJ and Job)",
+      "category": "Organization",
+      "owner": "People Team",
+      "relatedTerms": []
+    },
+    {
+      "acronym": "Readiness Report",
+      "name": "Readiness Report",
+      "description": "Channel settings that create mappings between Salsify properties and retailer attributes for product syndication.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Channel", "Mappings", "Target Schema"]
+    },
+    {
+      "acronym": "RFI",
+      "name": "Request for Information",
+      "description": "A formal request to vendors for information about their products or services",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["RFP"]
+    },
+    {
+      "acronym": "RFP",
+      "name": "Request for Proposal",
+      "description": "A formal request to vendors for a detailed proposal on products or services",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["RFI"]
+    },
+    {
+      "acronym": "RICE",
+      "name": "Reach Impact Confidence Effort",
+      "description": "An acronym for the four factors used to evaluate each project idea: reach, impact, confidence and effort.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PM"]
+    },
+    {
+      "acronym": "Rich Media",
+      "name": "Rich Media",
+      "description": "Any content that is an enhancement from text and static images (videos, 360 images, comparison tables). Called 'A+ content' on Amazon and 'below the fold content'.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["A+", "Enhanced Content", "360 Images"]
+    },
+    {
+      "acronym": "RSI",
+      "name": "Regional Solution Integrators",
+      "description": "Partners like Gournay, Avions - smaller and regionally based consulting firms",
+      "category": "Partners",
+      "owner": "Partnerships Team",
+      "relatedTerms": ["GSI", "GEO", "Agencies"]
+    },
+    {
+      "acronym": "RSU",
+      "name": "Retailer Stock Unit",
+      "description": "A retailer's internal stock keeping unit identifier",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["SKU", "GTIN"]
+    },
+    {
+      "acronym": "SAE",
+      "name": "Sales Account Executive",
+      "description": "Provides customers with expertise, education, and consultation on Salsify and industry. Works with CSM to understand customer's vision and desired outcomes.",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["AE", "CSM", "SDR"]
+    },
+    {
+      "acronym": "SAML",
+      "name": "Security Assertion Markup Language",
+      "description": "Open standard for exchanging authentication and authorization data between parties (identity provider and service provider). Most important use case is web browser SSO.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SSO"]
+    },
+    {
+      "acronym": "SAO",
+      "name": "Store Assortment Online",
+      "description": "Walmart's initiative to enhance customer experiences in stores and online. Makes in-store product information accessible online without making products transactable online.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["Walmart", "Syndication"]
+    },
+    {
+      "acronym": "SDR",
+      "name": "Sales Development Representative",
+      "description": "Entry-level sales role focused on outbound prospecting and qualifying leads",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["BDR", "AE", "XDR"]
+    },
+    {
+      "acronym": "SEO",
+      "name": "Search Engine Optimization",
+      "description": "Methods used to increase a website's search engine ranking based on relevance, quality, and reliability, thereby increasing traffic.",
+      "category": "Marketing",
+      "owner": "Marketing Team",
+      "relatedTerms": ["PDP", "A10"]
+    },
+    {
+      "acronym": "SE",
+      "name": "Solutions Engineer",
+      "description": "Technical pre-sales role that designs and demonstrates solutions for prospects",
+      "category": "Sales",
+      "owner": "Sales Engineering",
+      "relatedTerms": ["AE", "TSR"]
+    },
+    {
+      "acronym": "SFTP",
+      "name": "Secure File Transfer Protocol",
+      "description": "Facilitates data access and transfer over a data stream. Requires client user authentication and secure channel for data transfer.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["FTP", "SSL"]
+    },
+    {
+      "acronym": "SIA",
+      "name": "Salsify Impact Assessment",
+      "description": "Assessment tool to measure the impact of Salsify implementation on a customer's business",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["CSM"]
+    },
+    {
+      "acronym": "SIG",
+      "name": "Standard Information Gathering",
+      "description": "Developed by Shared Assessments. Aggregation of sheets used to answer information security questions. Used to conduct assessments of organization's security posture and risk profile.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC", "Security Package"]
+    },
+    {
+      "acronym": "SKU",
+      "name": "Stock-Keeping Unit",
+      "description": "A unique identification number that defines a product and keeps track of it for inventory. Can designate attributes such as style, color, and size.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "UPC", "ASIN"]
+    },
+    {
+      "acronym": "SLA",
+      "name": "Service Level Agreement",
+      "description": "The service contract between a service provider and a customer defining uptime/downtime ratios and expectations.",
+      "category": "Customer Success",
+      "owner": "Customer Success Team",
+      "relatedTerms": ["Uptime"]
+    },
+    {
+      "acronym": "SOC",
+      "name": "System and Organization Controls",
+      "description": "A suite of service offerings CPAs may provide in connection with system-level controls of a service organization or entity-level controls.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC 2", "SOX", "NIST"]
+    },
+    {
+      "acronym": "SOC 2",
+      "name": "System and Organization Controls 2",
+      "description": "An auditing procedure by AICPA that defines criteria for managing customer data based on five principles: security, availability, processing integrity, confidentiality, and privacy.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC", "SOC 2 Type 1", "SOC 2 Type 2"]
+    },
+    {
+      "acronym": "SOC 2 Type 1",
+      "name": "SOC 2 Type 1",
+      "description": "Audit that reports on the description of a data center's system and suitability of its design of controls. Salsify has obtained this certification.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC 2", "SOC 2 Type 2"]
+    },
+    {
+      "acronym": "SOC 2 Type 2",
+      "name": "SOC 2 Type 2",
+      "description": "Audit that includes everything in SOC 2 Type 1 plus the operating effectiveness of controls (auditor verifies controls actually work). Typically harder to obtain.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SOC 2", "SOC 2 Type 1"]
+    },
+    {
+      "acronym": "SOX",
+      "name": "Sarbanes-Oxley",
+      "description": "Act requiring all financial reports to include an Internal Controls Report showing financial data accuracy (within 5% variance) and adequate safeguards.",
+      "category": "Security",
+      "owner": "Finance Team",
+      "relatedTerms": ["SOC"]
+    },
+    {
+      "acronym": "SSL",
+      "name": "Secure Sockets Layer",
+      "description": "Standard security technology for establishing an encrypted link between a web server and web user. Allows sensitive information like credit card numbers to be sent securely.",
+      "category": "Security",
+      "owner": "Engineering",
+      "relatedTerms": ["TLS", "SFTP"]
+    },
+    {
+      "acronym": "SSO",
+      "name": "Single Sign-On",
+      "description": "An authentication process that allows a user to access multiple applications through one set of login credentials.",
+      "category": "Security",
+      "owner": "Engineering",
+      "relatedTerms": ["SAML"]
+    },
+    {
+      "acronym": "STLQ",
+      "name": "Same Time Last Quarter",
+      "description": "Used on Clari. Comparison metric against the same point in the previous quarter.",
+      "category": "Finance",
+      "owner": "Sales Team",
+      "relatedTerms": ["STLY"]
+    },
+    {
+      "acronym": "STLY",
+      "name": "Same Time Last Year",
+      "description": "Used on Clari. Comparison metric against the same point in the previous year.",
+      "category": "Finance",
+      "owner": "Sales Team",
+      "relatedTerms": ["STLQ"]
+    },
+    {
+      "acronym": "SupplierXM",
+      "name": "Supplier Experience Management",
+      "description": "A platform of product data management solutions at the intersection of a supplier's data and retailers, allowing them to collect, centralize, list, enrich and publish product data.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PXM", "CommerceXM"]
+    },
+    {
+      "acronym": "SXM",
+      "name": "Supply Experience Management",
+      "description": "Platform for managing supplier experiences and data",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["SupplierXM", "PXM"]
+    },
+    {
+      "acronym": "Syndication",
+      "name": "Syndication",
+      "description": "Pushing product data to all end channels. Example: sending all product attributes (descriptions and digital assets) downstream to Lowes.com or a Print Catalog.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Channel", "Omnichannel", "Target Schema"]
+    },
+    {
+      "acronym": "Target Schema",
+      "name": "Target Schema",
+      "description": "A way for Salsify engineers to encode retailer requirements. Can be updated automatically (through API) or manually. Determines what attributes are allowed/required for publishing.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Channel", "Readiness Report", "Mappings"]
+    },
+    {
+      "acronym": "TCIN",
+      "name": "Target Corporation Identification Number",
+      "description": "Typically an 8 digit unique stock keeping identifier that Target uses to identify products. Visible on target.com product pages in the Specifications section.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["SKU", "GTIN"]
+    },
+    {
+      "acronym": "TLS",
+      "name": "Transport Layer Security",
+      "description": "The successor protocol to SSL. An improved version that uses encryption to protect the transfer of data and information.",
+      "category": "Security",
+      "owner": "Engineering",
+      "relatedTerms": ["SSL"]
+    },
+    {
+      "acronym": "TSR",
+      "name": "Technical Sales Representative",
+      "description": "Field sales role focused on technical product demonstrations and customer solutions",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["AE", "SE", "SDR"]
+    },
+    {
+      "acronym": "UPC",
+      "name": "Universal Product Code",
+      "description": "A barcode symbology widely used in US, Canada, UK, Australia, NZ for tracking trade items. Most common form (UPC-A) consists of 12 numerical digits uniquely assigned to each item.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "EAN", "ASIN"]
+    },
+    {
+      "acronym": "Uptime",
+      "name": "Uptime",
+      "description": "The percentage of time that hardware or software is operating successfully. SLAs may define uptime/downtime ratios.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["SLA"]
+    },
+    {
+      "acronym": "V2MOM",
+      "name": "Vision Values Methods Obstacles Measures",
+      "description": "Salsify's governing goals framework covering Vision, Values, Methods, Obstacles, and Measures",
+      "category": "Organization",
+      "owner": "Executive Team",
+      "relatedTerms": ["ELT"]
+    },
+    {
+      "acronym": "VSSC",
+      "name": "Vendor Self-Service Catalog",
+      "description": "Amazon Vendor Self-Service Catalog",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["AVC"]
+    },
+    {
+      "acronym": "Waterfall",
+      "name": "Waterfall",
+      "description": "Sales term representing the levers to get to target booking. 4 stages: Qualified Contact, Salsa, Dollarized Opp, Won.",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["QCs", "GTM"]
+    },
+    {
+      "acronym": "WERCS",
+      "name": "Worldwide Environmental Regulatory Compliance Solutions",
+      "description": "Assessments required for products that may contain hazardous materials",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": []
+    },
+    {
+      "acronym": "Workflow",
+      "name": "Workflow",
+      "description": "A sequence of steps/tasks necessary to complete a specific process or project. Technology coordinates and automates how tasks move from phase to phase.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM"]
+    },
+    {
+      "acronym": "XDR",
+      "name": "XDR",
+      "description": "Umbrella term for ADR and BDR roles at Salsify. Used because there are two official names: ADR (Enterprise/Strategic Upsell) and BDR (New Business).",
+      "category": "Sales",
+      "owner": "Sales Team",
+      "relatedTerms": ["ADR", "BDR", "SDR"]
+    },
+    {
+      "acronym": "1P",
+      "name": "First Party",
+      "description": "A first-party relationship means the marketplace acts as the retailer and the brand is the wholesale supplier. Brand sells to Amazon, Amazon controls pricing.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["3P", "AVC"]
+    },
+    {
+      "acronym": "3P",
+      "name": "Third Party",
+      "description": "A third-party relationship is when the brand is the retailer and sells directly to buyers via the marketplace. They handle fulfillment themselves or use programs like FBA.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["1P", "ASC", "FBA"]
+    },
+    {
+      "acronym": "360 Images",
+      "name": "360 Images",
+      "description": "360-degree, controllable images that simulate the experience of being able to look at all sides of a product while in a store.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Rich Media", "DAM"]
+    },
+    {
+      "acronym": "ADR (Architecture)",
+      "name": "Architecture Decision Record",
+      "description": "Write up of changes on the platform. Used to propose, discuss and get feedback on designs.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": []
+    },
+    {
+      "acronym": "Channel Mapping",
+      "name": "Channel Mapping",
+      "description": "Process of creating data feeds specific to each channel's requirements (content and format). Translates data from brand format to channel's format.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Channel", "Target Schema", "Mappings"]
+    },
+    {
+      "acronym": "Content Refresh",
+      "name": "Content Refresh",
+      "description": "Retailer process to add or change information for products they already carry. May require different information than item setup process.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["NIS", "Item Setup Sheets"]
+    },
+    {
+      "acronym": "Data Governance",
+      "name": "Data Governance",
+      "description": "Strategies and technologies that companies use to ensure their business data is in compliance with regulations and corporate standards.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["GDPR", "MDM"]
+    },
+    {
+      "acronym": "Digital First",
+      "name": "Digital First",
+      "description": "A communication theory that publishers should release content into new media channels in preference to old media. Approaching opportunities with the assumption solutions should be as digital as possible.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["D2C", "Omnichannel"]
+    },
+    {
+      "acronym": "Golden Record",
+      "name": "Golden Record",
+      "description": "An antiquated term referring to a single version of product information. In modern ecommerce, there are multiple versions customized for each retailer or endpoint.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["MDM", "Single Source of Truth"]
+    },
+    {
+      "acronym": "Inventory",
+      "name": "Inventory",
+      "description": "Raw materials, work-in-progress goods, and finished goods being held by the company",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["OMS", "SKU"]
+    },
+    {
+      "acronym": "Item Setup Sheets",
+      "name": "Item Setup Sheets",
+      "description": "The form a brand fills out with product content and attributes, then sends to the retailer so the product can be uploaded onto the retailer's ecommerce site.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["NIS", "Content Refresh"]
+    },
+    {
+      "acronym": "Loopio",
+      "name": "Loopio",
+      "description": "An RFP tool also used to store customer security questions and answers while creating a centralized place for common content.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["RFP", "Security Package"]
+    },
+    {
+      "acronym": "Mappings",
+      "name": "Mappings",
+      "description": "Bridge between customer's data schema (product properties) and retailer's data requirements. Channel mappings tie everything together for syndication.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Channel", "Target Schema", "Channel Mapping"]
+    },
+    {
+      "acronym": "Penetration Testing",
+      "name": "Penetration Testing",
+      "description": "A specialized assessment conducted on information systems to identify vulnerabilities that could be exploited. Salsify has independent 3rd party conduct penetration testing.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["Vulnerability Testing", "NIST"]
+    },
+    {
+      "acronym": "Privacy Shield",
+      "name": "Privacy Shield Framework",
+      "description": "Framework designed by US Dept of Commerce and EU/Swiss to provide companies mechanism to comply with data protection requirements when transferring personal data.",
+      "category": "Security",
+      "owner": "Legal Team",
+      "relatedTerms": ["GDPR"]
+    },
+    {
+      "acronym": "Security Package",
+      "name": "Security Package",
+      "description": "A collection of customer facing security documents, including policies, procedures and letters of attestation. A SIG is normally added.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["SIG", "SOC"]
+    },
+    {
+      "acronym": "Single Source of Truth",
+      "name": "Single Source of Truth",
+      "description": "Having one source for all information needed to publish a modern product page: marketing copy, logistics data, rich media assets, and pricing data.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Golden Record", "MDM", "PIM"]
+    },
+    {
+      "acronym": "Test and Learn",
+      "name": "Test and Learn",
+      "description": "A set of practices followed by retailers, banks and other consumer-focused companies to test ideas in a small number of locations or customers to predict impact.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["A/B Testing"]
+    },
+    {
+      "acronym": "Vulnerability Testing",
+      "name": "Vulnerability Testing",
+      "description": "Testing to identify weaknesses in information systems, security procedures, or internal controls that could be exploited. Can be manual or automated with vulnerability scanners.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["Penetration Testing", "NIST"]
+    },
+    {
+      "acronym": "Catalog",
+      "name": "Catalog",
+      "description": "Contains all products an organization sells through their channels. Rise of e-commerce has increased need for frequent updates so brands are digitizing them.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "Channel"]
+    },
+    {
+      "acronym": "Instacart",
+      "name": "Instacart",
+      "description": "A same-day grocery delivery startup offering delivery in as little as 1 hour. Customers can choose from stores like Safeway, Trader Joe's, Whole Foods, Costco.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["Omnichannel"]
+    },
+    {
+      "acronym": "Instagram",
+      "name": "Instagram",
+      "description": "A photo and video-sharing social networking service owned by Facebook/Meta. Used for product marketing and social commerce.",
+      "category": "Marketing",
+      "owner": "Marketing Team",
+      "relatedTerms": ["D2C"]
+    },
+    {
+      "acronym": "InDesign",
+      "name": "InDesign",
+      "description": "A publishing software created by Adobe. Allows you to design and publish high-quality documents for digital or print.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["DAM", "Full Flat"]
+    },
+    {
+      "acronym": "Walmart Online Grocery",
+      "name": "Walmart Online Grocery",
+      "description": "Formerly Walmart To Go. Service allowing customers to shop online for grocery and in-store products and pick them up at available store locations.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["SAO", "Omnichannel"]
+    },
+    {
+      "acronym": "Salsify Labs",
+      "name": "Salsify Labs",
+      "description": "Driven by Customer Solutions team, rolling out innovative capabilities that provide additional value to customers at no additional cost. Not part of core roadmap.",
+      "category": "Product",
+      "owner": "Customer Solutions Team",
+      "relatedTerms": []
+    },
+    {
+      "acronym": "Toll Road",
+      "name": "Toll Road",
+      "description": "When brands are required to pay a third party to activate product content",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["CSP", "Syndication"]
+    },
+    {
+      "acronym": "Touchpoint",
+      "name": "Touchpoint",
+      "description": "A retailer, direct to consumer website, or other endpoint where brand manufacturers deliver product content",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Syndication", "Channel"]
+    },
+    {
+      "acronym": "Parent Product",
+      "name": "Parent Product",
+      "description": "Base product with variants associated with it. Contains properties with common values across all variants (e.g., Brand, marketing copy).",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Variant", "DIH"]
+    },
+    {
+      "acronym": "Variant",
+      "name": "Variant",
+      "description": "Sellable products associated with parents. Contains properties unique to the variant (e.g., size, color). Parent/variant functionality not enabled in all orgs.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Parent Product", "DIH"]
+    },
+    {
+      "acronym": "Smart List",
+      "name": "Smart List",
+      "description": "A list of products or digital assets built with filters, based on commonalities of properties, states, or list membership. Membership changes based on filters applied.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Simple List"]
+    },
+    {
+      "acronym": "Simple List",
+      "name": "Simple List",
+      "description": "A list of products or digital assets whose only commonality is they are on the same list. Can be added individually or in bulk, changes only when updated manually.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Smart List"]
+    },
+    {
+      "acronym": "Data Pool",
+      "name": "Data Pool",
+      "description": "A related set of values pulled from a centralized database, such as supply chain information or employee information. In GDSN context, data pools enable secure synchronization of master data between trading partners.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "GS1"]
+    },
+    {
+      "acronym": "Cybersecurity",
+      "name": "Cybersecurity",
+      "description": "Processes, implementation of controls and security practices orchestrated to protect networks, applications, software programs, computers and data from attack, damage or unauthorized access.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["NIST", "SOC", "IDS"]
+    },
+    {
+      "acronym": "Compliance",
+      "name": "Compliance",
+      "description": "The state of being in accordance with established guidelines or the process of becoming in accordance with regulations and corporate standards.",
+      "category": "Security",
+      "owner": "Security Team",
+      "relatedTerms": ["GDPR", "SOC", "SOX"]
+    },
+    {
+      "acronym": "Actionable Insights",
+      "name": "Actionable Insights",
+      "description": "In data analytics, refers to information that can be acted upon or information that gives clarity to decision makers about which actions should be taken.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["PDP", "SEO"]
+    },
+    {
+      "acronym": "1WorldSync",
+      "name": "1WorldSync",
+      "description": "A product data management company that delivers industry proven product information management systems, education and data synchronization implementation. Also abbreviated as 1WS.",
+      "category": "Partners",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "GS1"]
+    },
+    {
+      "acronym": "Activation",
+      "name": "Activation",
+      "description": "The mechanism used at Salsify to syndicate customized content to a retail endpoint.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Syndication", "Channel"]
+    },
+    {
+      "acronym": "Base Product",
+      "name": "Base Product",
+      "description": "Includes parent products and solo products. These are the foundational product records that may or may not have variants associated with them.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Parent Product", "Solo Product", "Variant"]
+    },
+    {
+      "acronym": "Digital Assets",
+      "name": "Digital Assets",
+      "description": "Image, video, or any other file type stored in Salsify. Digital assets may or may not be associated with products.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["DAM", "Rich Media"]
+    },
+    {
+      "acronym": "Distribution Partner",
+      "name": "Distribution Partner",
+      "description": "Companies that receive product information through the syndication process in Salsify. Can include retailers, advertising platforms, ecommerce platforms, or any other entity that receives syndicated product content.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Syndication", "Channel"]
+    },
+    {
+      "acronym": "EBC",
+      "name": "Enhanced Brand Content",
+      "description": "Amazon's A+ tool that enables brand owners to change the product descriptions of branded ASINs. Adding EBC to product detail pages can result in higher conversion rates, increased traffic, and increased sales.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["A+", "ASIN", "AVC"]
+    },
+    {
+      "acronym": "Global Registry",
+      "name": "Global Registry",
+      "description": "Enables the registration and distribution of party information, identifying actors and roles in the GDSN network. Part of the GS1 Global Registry system.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "GS1", "GLN"]
+    },
+    {
+      "acronym": "Product Identifiers",
+      "name": "Product Identifiers",
+      "description": "Unique IDs that allow Salsify to recognize whether new data should be attached to an existing product or, where the product ID isn't in the system yet, a new product should be created.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GTIN", "SKU", "ASIN"]
+    },
+    {
+      "acronym": "Publish",
+      "name": "Publish",
+      "description": "Deliver product content in a channel's format. The channel setup determines method of delivery, which could be a download, delivery via FTP/Dropbox/Box, or directly to a retailer.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Channel", "Syndication"]
+    },
+    {
+      "acronym": "Sellable Product",
+      "name": "Sellable Product",
+      "description": "Includes variant and solo products. These are the products that can actually be purchased by consumers, as opposed to parent products which represent a group.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Variant", "Solo Product", "Base Product"]
+    },
+    {
+      "acronym": "Solo Product",
+      "name": "Solo Product",
+      "description": "Products that don't have any parent/variant associations. These are standalone products that don't belong to a product family.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Parent Product", "Variant", "Base Product"]
+    },
+    {
+      "acronym": "Trading Partner",
+      "name": "Trading Partner",
+      "description": "A common term for any entity sending/receiving item data via GDSN data pool. Can be manufacturers, retailers, distributors, or other supply chain participants.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "Data Pool"]
+    },
+    {
+      "acronym": "A/B Testing",
+      "name": "A/B Testing",
+      "description": "A randomized experiment with two variants (A and B) used to identify changes that increase or maximize an outcome of interest. Version A is typically the control, while version B is modified in some respect.",
+      "category": "Marketing",
+      "owner": "Marketing Team",
+      "relatedTerms": ["Test and Learn", "SEO"]
+    },
+    {
+      "acronym": "CRaP",
+      "name": "Can't Realize any Profit",
+      "description": "Amazon term for products that are discontinued as 1P sellers due to price or other issues that prevent Amazon from winning the Buy Box profitably.",
+      "category": "Amazon",
+      "owner": "Product Team",
+      "relatedTerms": ["Buy Box", "1P", "AVC"]
+    },
+    {
+      "acronym": "User",
+      "name": "User",
+      "description": "An entity (usually a person) that has authority to operate something, such as an application. In SaaS context, refers to individuals with access to the platform.",
+      "category": "Engineering",
+      "owner": "Engineering",
+      "relatedTerms": ["SSO", "SAML"]
+    },
+    {
+      "acronym": "Multi-value Property",
+      "name": "Multi-value Property",
+      "description": "A property that stores more than one piece of product information in separate Salsify values within a single property. Not a comma-separated list in a single value.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Properties", "PIM"]
+    },
+    {
+      "acronym": "Enumerated",
+      "name": "Enumerated Property",
+      "description": "Picklist/Category property type used when there is a known set of property values to choose from like brands, colors or categories. Presents users with a dropdown menu of available values that can contain hierarchies.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Properties", "PIM"]
+    },
+    {
+      "acronym": "Boolean",
+      "name": "Boolean Property",
+      "description": "A binary variable property type with two possible values called 'true' and 'false.' Most readiness reports preview 'true' or 'false' but automatically convert to the format the endpoint requires (Y/N, Yes/No, etc).",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Properties", "Readiness Report"]
+    },
+    {
+      "acronym": "Conditionally-Required Attribute",
+      "name": "Conditionally-Required Attribute",
+      "description": "An attribute that is optional until a specific condition is met that makes it required. For example, some attributes are only required for specific categories or when certain conditions apply.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Required Attribute", "Readiness Report"]
+    },
+    {
+      "acronym": "Required Attribute",
+      "name": "Required Attribute",
+      "description": "An attribute that must be filled in order for a product to be sent to an endpoint through a readiness report. When all required attributes are filled, a product is 100% ready and included in publish events.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Conditionally-Required Attribute", "Readiness Report"]
+    },
+    {
+      "acronym": "Retailer Edits",
+      "name": "Retailer Edits",
+      "description": "Readiness report feature that allows users to quickly replace a product value for an attribute with an optimized value that only applies to that readiness report. Values are not stored with the core product record.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Readiness Report", "Channel"]
+    },
+    {
+      "acronym": "Property Groups",
+      "name": "Property Groups",
+      "description": "Organize properties on the product details page and are exportable in JSON format. Help structure and categorize related properties together.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Properties", "PIM"]
+    },
+    {
+      "acronym": "Organization ID",
+      "name": "Organization ID",
+      "description": "Unique identifier for a Salsify organization. Required when a user is associated with multiple Salsify organizations. Found in the URL path after /orgs/.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["User"]
+    },
+    {
+      "acronym": "Internal Readiness Report",
+      "name": "Internal Readiness Report",
+      "description": "A Readiness Report based on your organization's properties. Allows analyzing product readiness based on Salsify properties and shows completion level per property at a high level.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Readiness Report", "Properties"]
+    },
+    {
+      "acronym": "Propose and Review",
+      "name": "Propose and Review",
+      "description": "Salsify workflow task type where a team member submits content and it requires approval by the assigned team member before the updated content is accepted.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Workflow"]
+    },
+    {
+      "acronym": "Revision Rounds",
+      "name": "Revision Rounds",
+      "description": "Workflow Collaboration tool that allows users to choose from and compare previous versions of content against the most recently updated.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Workflow", "Track Changes"]
+    },
+    {
+      "acronym": "Track Changes",
+      "name": "Track Changes",
+      "description": "A workflow tool that highlights differences between versions of content. Green background shows content added since the compared version, red strikethrough shows content removed.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Workflow", "Revision Rounds"]
+    },
+    {
+      "acronym": "Data Recipient",
+      "name": "Data Recipient",
+      "description": "In GDSN context, typically a retailer, hospital, purchasing group, or distributor. Subscribes to and receives item data through the recipient data pool.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "Data Source", "Recipient Data Pool"]
+    },
+    {
+      "acronym": "Data Source",
+      "name": "Data Source",
+      "description": "In GDSN context, typically a Manufacturer/Distributor. Registers source data in the source data pool to be registered by GS1 and sent to the recipient data pool.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "Data Recipient", "Source Data Pool"]
+    },
+    {
+      "acronym": "Recipient Data Pool",
+      "name": "Recipient Data Pool",
+      "description": "Receives subscriptions from Data Recipients and registers them with the GS1 Registry. Receives new and updated item information from the Source data pool and sends them to the Data Recipient.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "Source Data Pool", "Data Recipient"]
+    },
+    {
+      "acronym": "Source Data Pool",
+      "name": "Source Data Pool",
+      "description": "Validates and receives item information against the GDSN standard. Uses standard XML to register trade item information in the GS1 registry and exchange data with the recipient data pool.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["GDSN", "Recipient Data Pool", "Data Source"]
+    },
+    {
+      "acronym": "Aspect Ratio",
+      "name": "Aspect Ratio",
+      "description": "The ratio between the width and height of an image or video. For example, square is 1:1 because the sides are equal. Typically video is 16:9.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Digital Assets", "DAM"]
+    },
+    {
+      "acronym": "Diacritics",
+      "name": "Diacritics",
+      "description": "Marks, points, or signs added or attached to a letter or character to distinguish it from another of similar form, give it particular phonetic value, or indicate stress like a tilde or circumflex.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["M18t"]
+    },
+    {
+      "acronym": "Extended Attributes",
+      "name": "Extended Attributes",
+      "description": "A piece of descriptive data that is added to a computer file by a user but is not part of that file's regular set of attributes.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Properties", "Attributes"]
+    },
+    {
+      "acronym": "Retailer Portal",
+      "name": "Retailer Portal",
+      "description": "A retailer system that suppliers use to maintain and activate product content. The interface through which brands submit and manage their product information for specific retailers.",
+      "category": "Retail",
+      "owner": "Product Team",
+      "relatedTerms": ["Syndication", "Activation"]
+    },
+    {
+      "acronym": "Paid vs. Organic Search",
+      "name": "Paid vs. Organic Search",
+      "description": "Paid search allows companies to pay for website display on search results when specific keywords are typed. Organic search is based on unpaid, natural rankings from search engine algorithms using SEO methods.",
+      "category": "Marketing",
+      "owner": "Marketing Team",
+      "relatedTerms": ["SEO", "PDP"]
+    },
+    {
+      "acronym": "Privacy Policy",
+      "name": "Privacy Policy",
+      "description": "Governs how Salsify Inc. and affiliated companies use Personal Data collected, received and stored about individuals in connection with the use of websites and services.",
+      "category": "Security",
+      "owner": "Legal Team",
+      "relatedTerms": ["GDPR", "Privacy Shield", "PIA"]
+    },
+    {
+      "acronym": "Equadis",
+      "name": "Equadis",
+      "description": "A company selling a PIM solution used by many manufacturers. They send their data into various platforms through Equadis-GS1 integration.",
+      "category": "Partners",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "GDSN", "GS1"]
+    },
+    {
+      "acronym": "Trace One",
+      "name": "Trace One",
+      "description": "A company that connects retailers, manufacturers, and suppliers to accelerate product innovation and create supply chain transparency for private label and national brands.",
+      "category": "Partners",
+      "owner": "Product Team",
+      "relatedTerms": ["PIM", "Syndication"]
+    },
+    {
+      "acronym": "Validations",
+      "name": "Validations",
+      "description": "Rules available with governance capabilities to ensure data quality and completeness. Validates product data against defined requirements before syndication.",
+      "category": "Product",
+      "owner": "Product Team",
+      "relatedTerms": ["Readiness Report", "Required Attribute"]
+    },
+    {
+      "acronym": "ARR",
+      "name": "Annual Recurring Revenue",
+      "description": "The value of the recurring revenue of a business's term subscriptions normalized for a single calendar year. Key metric for SaaS businesses.",
+      "category": "Finance",
+      "owner": "Finance Team",
+      "relatedTerms": ["DRR", "GDRR", "CRR"]
+    }
+  ]
+}

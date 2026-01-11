@@ -1,0 +1,128 @@
+[
+  {
+    "acronym": "cloudops",
+    "name": "CloudOps",
+    "description": "Repository containing source code for building Salsify's cloud infrastructure. Includes CloudFormation templates for AWS resources (VPC, IAM, Redshift, Glue, SQS), Kubernetes manifests for ops workloads, Packer builds for AMI creation, Jenkins pipeline scripts, and various operational tools for cost tagging, credential rotation, and SOC compliance reporting.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/cloudops", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "AMI",
+    "name": "Amazon Machine Image",
+    "description": "Pre-configured virtual machine images used for launching EC2 instances. In Salsify, AMIs follow the naming convention 'salsify-<purpose>-<env>-{{timestamp}}' and are built using Packer. Examples include k8s-stag for Kubernetes staging and awslinuxgolden for general AWS Linux golden images.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/packer", "description": "Packer Builds in CloudOps"}]
+  },
+  {
+    "acronym": "VPC",
+    "name": "Virtual Private Cloud",
+    "description": "AWS networking construct used to isolate Salsify's cloud resources. CloudOps contains CloudFormation templates for VPC infrastructure including ops_vpc_infrastructure.json, vpc_infrastructure_v1.json, and vpc_infrastructure_v2.json, as well as VPC peering configurations.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/cloudformation/infrastructure", "description": "VPC Infrastructure in CloudOps"}]
+  },
+  {
+    "acronym": "IAM",
+    "name": "Identity and Access Management",
+    "description": "AWS service for managing access to cloud resources. CloudOps contains IAM CloudFormation templates including iamk8s.json for Kubernetes access, and tools for auditing IAM MFA status and user access keys.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/cloudformation/iam", "description": "IAM Templates in CloudOps"}]
+  },
+  {
+    "acronym": "SOC",
+    "name": "Security Operations Center / SOC Compliance",
+    "description": "Security compliance and audit tools in CloudOps for SOC reporting. Includes scripts for tracking GitHub members, Jenkins deploys, production deploy parsing, RDS users, and staging environment parsing to support security audit requirements.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools/soc", "description": "SOC Tools in CloudOps"}]
+  },
+  {
+    "acronym": "ETL",
+    "name": "Extract, Transform, Load",
+    "description": "Data pipeline pattern used in Salsify's analytics infrastructure. CloudOps contains AWS Glue CloudFormation templates including salsify_page_event_reporting_etl.json for processing page event data.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/cloudformation/glue", "description": "Glue ETL Templates in CloudOps"}]
+  },
+  {
+    "acronym": "infra-mgmt",
+    "name": "Infrastructure Management",
+    "description": "Automated deployment system that releases Kubernetes manifest changes to infrastructure on PR merge to master. Used by CloudOps for deploying applications like infra-temporal.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/kubernetes", "description": "Kubernetes Resources in CloudOps"}]
+  },
+  {
+    "acronym": "infra-temporal",
+    "name": "Infrastructure Temporal",
+    "description": "An ops workload running on Kubernetes that is automatically released via infra-mgmt when CloudOps PR changes are merged to master.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/kubernetes", "description": "Kubernetes Resources in CloudOps"}]
+  },
+  {
+    "acronym": "cfn-lint",
+    "name": "CloudFormation Linter",
+    "description": "Tool used in CloudOps to validate CloudFormation templates against AWS specifications. Configured as a pre-commit hook to automatically lint changes to the cloudformation/ directory.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops", "description": "CloudOps Repository"}]
+  },
+  {
+    "acronym": "MFA",
+    "name": "Multi-Factor Authentication",
+    "description": "Security feature for AWS IAM users. CloudOps includes audit_iam_mfa.sh script to audit MFA status for IAM users.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools", "description": "CloudOps Tools"}]
+  },
+  {
+    "acronym": "RDS",
+    "name": "Relational Database Service",
+    "description": "AWS managed database service used by Salsify. CloudOps includes tools for adding AWS IP blocks to RDS instances (add_aws_ip_blocks_rds_instance.sh), getting RDS credentials, and tracking RDS users for SOC compliance.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools", "description": "CloudOps Tools"}]
+  },
+  {
+    "acronym": "SQS",
+    "name": "Simple Queue Service",
+    "description": "AWS messaging queue service. CloudOps contains CloudFormation templates for SQS configuration in the cloudformation/sqs directory.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/cloudformation/sqs", "description": "SQS Templates in CloudOps"}]
+  },
+  {
+    "acronym": "EBS",
+    "name": "Elastic Block Store",
+    "description": "AWS block storage service for EC2 instances. CloudOps includes tag_helper_ebs.rb for cost tagging EBS volumes.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools/cost-tagging", "description": "Cost Tagging Tools"}]
+  },
+  {
+    "acronym": "EC2",
+    "name": "Elastic Compute Cloud",
+    "description": "AWS virtual server service. CloudOps includes tools for cost tagging EC2 instances and certificate formatting for EC2 (format_cert_ec2.rb).",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools", "description": "CloudOps Tools"}]
+  },
+  {
+    "acronym": "S3",
+    "name": "Simple Storage Service",
+    "description": "AWS object storage service. CloudOps includes tag_helper_s3.rb for cost tagging S3 buckets.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools/cost-tagging", "description": "Cost Tagging Tools"}]
+  },
+  {
+    "acronym": "ELB",
+    "name": "Elastic Load Balancer",
+    "description": "AWS load balancing service. CloudOps includes update_elb.rb script for managing load balancer configurations.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools", "description": "CloudOps Tools"}]
+  },
+  {
+    "acronym": "SAML",
+    "name": "Security Assertion Markup Language",
+    "description": "Authentication standard used for AWS single sign-on. CloudOps includes aws_saml_provider_update.rb for updating SAML provider configurations.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools", "description": "CloudOps Tools"}]
+  },
+  {
+    "acronym": "CSR",
+    "name": "Certificate Signing Request",
+    "description": "Request for SSL/TLS certificates. CloudOps includes csrgen.sh script for generating certificate signing requests.",
+    "category": "Infrastructure",
+    "links": [{"url": "https://github.com/salsify/cloudops/tree/master/tools", "description": "CloudOps Tools"}]
+  }
+]

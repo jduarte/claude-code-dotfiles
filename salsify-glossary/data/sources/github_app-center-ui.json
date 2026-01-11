@@ -1,0 +1,182 @@
+[
+  {
+    "acronym": "app-center-ui",
+    "name": "App Center UI",
+    "description": "Ember microfrontend for installing and managing Salsify applications via the Salsify App Center. Provides the user interface for browsing, installing, and managing applications including integrations, extensions, modules, accelerators, and retailer destinations. Uses GraphQL Gateway for data fetching and supports running in isolation with dummy data or in tandem with Dandelion for standard APIs.",
+    "category": "GitHub Repos",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "GitHub Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "App Center",
+    "name": "Salsify App Center",
+    "description": "The central marketplace and management hub within Salsify for discovering, installing, and managing applications. Applications in the App Center are categorized as Accelerators, Extensions, Integrations, Modules, or Retailer Destinations. The App Center supports various installation methods including manual installation and workflow type link installation.",
+    "category": "Product",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Grocery Accelerator",
+    "name": "Grocery Accelerator",
+    "description": "A specialized accelerator within Salsify designed to help grocery brands quickly onboard to Salsify with pre-configured workflows, channels, and integrations for grocery retail. Includes support for Open Catalog, Universal Properties, Nutrition Label Visualization, Grocery Category Guide, and integrations with retailers like DoorDash and Albertsons.",
+    "category": "Product",
+    "links": [
+      {
+        "url": "https://help.salsify.com/ProductXM/s/article/grocery-category-guide",
+        "description": "Grocery Category Guide KB Article"
+      }
+    ]
+  },
+  {
+    "acronym": "Open Catalog",
+    "name": "Salsify Open Catalog",
+    "description": "A Salsify feature providing access to standardized product data and category structures for grocery products. Part of the Grocery Accelerator offering, it provides pre-built schemas and data for grocery industry product information.",
+    "category": "Product",
+    "links": [
+      {
+        "url": "https://help.salsify.com/ProductXM/s/article/salsify-open-catalog",
+        "description": "Open Catalog KB Article"
+      }
+    ]
+  },
+  {
+    "acronym": "Universal Properties",
+    "name": "Universal Properties",
+    "description": "A Salsify feature that provides standardized property definitions that can be used across products and categories. Part of the Grocery Accelerator feature set, Universal Properties help ensure consistent data structures across product catalogs.",
+    "category": "Product",
+    "links": [
+      {
+        "url": "https://help.salsify.com/ProductXM/s/article/universal-properties",
+        "description": "Universal Properties KB Article"
+      }
+    ]
+  },
+  {
+    "acronym": "Accelerator",
+    "name": "App Center Accelerator Application",
+    "description": "A type of application in the Salsify App Center that provides pre-configured solutions to speed up implementation for specific use cases or industries. Accelerators bundle together workflows, schemas, and configurations for rapid deployment. The Grocery Accelerator is an example of this application type.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Extension",
+    "name": "App Center Extension Application",
+    "description": "A type of application in the Salsify App Center that extends Salsify's core functionality with additional features or capabilities. Extensions add new capabilities without replacing existing functionality.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Integration",
+    "name": "App Center Integration Application",
+    "description": "A type of application in the Salsify App Center that connects Salsify with external systems, platforms, or services. Integrations enable data flow between Salsify and third-party systems.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Module",
+    "name": "App Center Module Application",
+    "description": "A type of application in the Salsify App Center that provides additional modular functionality that can be enabled or disabled independently. Modules represent discrete feature sets that can be added to Salsify.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Retailer Destination",
+    "name": "App Center Retailer Destination Application",
+    "description": "A type of application in the Salsify App Center that represents a specific retailer or marketplace channel where products can be syndicated. Retailer destinations provide pre-configured connections to retail partners like Albertsons or DoorDash.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Target Schema",
+    "name": "Target Schema",
+    "description": "A data structure in Salsify that defines the required format and fields for product data being sent to a specific destination or channel. Target schemas ensure product data conforms to retailer or marketplace requirements. Examples include 'salsify_open_catalog', 'albertsons_direct_connection_psxm', and 'doordash_direct_connection'.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Workflow Template",
+    "name": "Workflow Template",
+    "description": "A pre-built workflow configuration in Salsify that can be installed and customized for specific use cases. Workflow templates are available through the Template Library and can be associated with App Center applications through the WorkflowTypeLinkInstallationMethod. QA workflows are an example of workflow templates used in the Grocery Accelerator.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Template Library",
+    "name": "Template Library",
+    "description": "A Salsify feature that provides access to pre-built workflow templates and configurations. Users can browse, install, and customize templates from the Template Library to set up common workflows without starting from scratch.",
+    "category": "Product",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Installation",
+    "name": "App Center Installation",
+    "description": "The process and state of installing an application from the Salsify App Center. Installations have different states including Running, Stopped, Completed, and Failed. The installation process may require developer contact or be automated through workflow type links.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/app-center-ui",
+        "description": "App Center UI Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "CD",
+    "name": "Continuous Deployment",
+    "description": "The deployment practice used by app-center-ui where any commits to master are automatically deployed to production once CI passes. Staging deploys are handled separately via Jenkins.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://deploys.ops.salsify.com/job/staging-app-center-ui-deploy/",
+        "description": "Staging Deploy Jenkins Job"
+      }
+    ]
+  }
+]

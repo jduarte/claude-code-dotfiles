@@ -1,0 +1,38 @@
+[
+  {
+    "acronym": "digital-asset-management-ui",
+    "name": "Digital Asset Management UI",
+    "description": "Ember Micro App for Digital Asset Management (DAM). A frontend application that provides the user interface for Salsify's DAM functionality, allowing users to manage digital assets like images, videos, and other media. Built using Ember.js and communicates with backend services via GraphQL APIs including Dandelion and Content Flow.",
+    "category": "GitHub Repos",
+    "links": [
+      {
+        "url": "https://github.com/salsify/digital-asset-management-ui",
+        "description": "GitHub Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "dandelion",
+    "name": "Dandelion",
+    "description": "A GraphQL backend service used by the DAM UI. Provides a GraphQL API at localhost:5000/graphql during development. Serves as one of the primary data sources for the Digital Asset Management micro app.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/digital-asset-management-ui",
+        "description": "Referenced in DAM UI"
+      }
+    ]
+  },
+  {
+    "acronym": "content-flow",
+    "name": "Content Flow",
+    "description": "A GraphQL backend service used by the DAM UI for content workflow functionality. Provides a GraphQL API at localhost:21012/graphql during development. Handles content-related operations within the Digital Asset Management system.",
+    "category": "Engineering",
+    "links": [
+      {
+        "url": "https://github.com/salsify/digital-asset-management-ui",
+        "description": "Referenced in DAM UI"
+      }
+    ]
+  }
+]

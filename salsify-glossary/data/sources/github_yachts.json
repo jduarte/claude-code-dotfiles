@@ -1,0 +1,91 @@
+[
+  {
+    "acronym": "yachts",
+    "name": "YACHTS - Yet Another Compassionate Hammer for Target Schemas",
+    "description": "A Ruby gem for manipulating, optimizing, and importing Target Schemas. Provides a clear separation between Target Schema structure and representation, enabling logical optimizations for conditions, automatic versioning, and metadata support. Can build Target Schemas from scratch, import existing JSON TS, or convert from JSON Schema 2020-12 format. Replaces older tools like Amadeus and Tailor.",
+    "category": "GitHub Repos",
+    "relatedTerms": ["Target Schema", "TSDL", "dandelion", "TSGen", "YCL", "Amadeus", "Tailor"],
+    "links": [
+      {"url": "https://github.com/salsify/yachts", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "TSDL",
+    "name": "Target Schema Definition Language",
+    "description": "The JSON-based specification language that defines the structure and format of Target Schemas at Salsify. Specifies how fields, conditions, validations, and picklists are represented in JSON format. YACHTS uses Representers to transform internal structures into TSDL-compliant JSON.",
+    "category": "Engineering",
+    "relatedTerms": ["Target Schema", "yachts", "dandelion"],
+    "links": [
+      {"url": "https://salsify.atlassian.net/wiki/spaces/ENG/pages/42237956/Target+Schema+Definition+Language", "description": "TSDL Confluence Documentation"}
+    ]
+  },
+  {
+    "acronym": "TSGen",
+    "name": "Target Schema Generation",
+    "description": "The process of creating Target Schema JSON files for retail channels. Can be done using YACHTS, Amadeus, Tailor, or other tools. YACHTS provides separation between TSGen creation and representation, allowing optimizations and versioning to be applied transparently.",
+    "category": "Engineering",
+    "relatedTerms": ["Target Schema", "yachts", "TSDL", "Amadeus", "Tailor"]
+  },
+  {
+    "acronym": "YCL",
+    "name": "Yachts Condition Language",
+    "description": "A human-readable string representation of YACHTS conditions. Used for debugging and displaying condition logic. Examples: 'AND(field_a = \"this\", field_b = \"that\")' or 'PRESENT(field_c) = TRUE'. Generated via the #to_ycl method on condition objects.",
+    "category": "Engineering",
+    "relatedTerms": ["yachts", "Target Schema"]
+  },
+  {
+    "acronym": "Amadeus",
+    "name": "Amadeus - Legacy Target Schema Tool",
+    "description": "A Salsify tool developed primarily by SolEng (Solutions Engineering) for composing Target Schemas and generating their JSON representation. Predecessor to YACHTS. Limited by direct manipulation of TSDL data structures, making it harder to update the schema definition language or add global optimizations.",
+    "category": "GitHub Repos",
+    "relatedTerms": ["Target Schema", "TSGen", "Tailor", "yachts"],
+    "links": [
+      {"url": "https://github.com/salsify/amadeus", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "Tailor",
+    "name": "Tailor - Amadeus Fork",
+    "description": "A fork of Amadeus with custom behavior, mostly developed by the Connections team. Used for Target Schema generation before YACHTS. Like Amadeus, limited by direct TSDL manipulation without separation between structure and representation.",
+    "category": "GitHub Repos",
+    "relatedTerms": ["Target Schema", "TSGen", "Amadeus", "yachts"],
+    "links": [
+      {"url": "https://github.com/salsify/tailor", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "TS Validation Proxy",
+    "name": "Target Schema Validation Proxy",
+    "description": "An internal Salsify service used by YACHTS to import Target Schemas to Dandelion. Handles validation, dry runs, and the actual import process. YACHTS leverages TargetSchemaImporter which internally uses this proxy service.",
+    "category": "Engineering",
+    "relatedTerms": ["Target Schema", "yachts", "dandelion"],
+    "links": [
+      {"url": "https://github.com/salsify/ts-validation-proxy", "description": "GitHub Repository"},
+      {"url": "https://ts-validation-proxy.internal.salsify.com", "description": "Internal Service URL"}
+    ]
+  },
+  {
+    "acronym": "TargetSchemaImporter",
+    "name": "Target Schema Importer",
+    "description": "A library used by YACHTS to import Target Schemas to Dandelion. Supports both synchronous and asynchronous imports. Handles S3 uploads for TS JSON and metadata files, versioning via TS tags, and integration with TS Validation Proxy.",
+    "category": "Engineering",
+    "relatedTerms": ["Target Schema", "yachts", "TS Validation Proxy"],
+    "links": [
+      {"url": "https://github.com/salsify/target-schema-importer/", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "Representer",
+    "name": "Representer - YACHTS JSON Generator",
+    "description": "A YACHTS component that transforms Target Schema structs and conditions into JSON representation (TSDL format). Supports configuration options for metadata inclusion, JSON formatting (beautified/compressed), picklist name pairing, circular dependency resolution, validation, and optimization.",
+    "category": "Engineering",
+    "relatedTerms": ["yachts", "TSDL", "Target Schema"]
+  },
+  {
+    "acronym": "Yachts Condition",
+    "name": "Yachts Condition - Logical Expression System",
+    "description": "A system in YACHTS for representing and optimizing logical conditions in Target Schemas. Supports AND, OR, Present, Blank, Simple conditions, and If-Then-Else logic. Conditions can be resolved (optimized), evaluated, inverted, and represented as YCL strings or JSON. Used for visible_if, required_if, and validation conditions.",
+    "category": "Engineering",
+    "relatedTerms": ["yachts", "YCL", "Target Schema"]
+  }
+]

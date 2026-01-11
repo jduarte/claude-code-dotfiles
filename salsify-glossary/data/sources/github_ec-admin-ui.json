@@ -1,0 +1,44 @@
+[
+  {
+    "acronym": "ec-admin-ui",
+    "name": "EC Admin UI",
+    "description": "Internal tooling application for Enhanced Content administration. Built with Ember.js, it provides administrative interfaces for EC management, destination configuration, and demo data generation. Connects to dandelion and brand-space backend services via GraphQL.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/ec-admin-ui", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "EC",
+    "name": "Enhanced Content",
+    "description": "Salsify's module for creating mobile-responsive enhanced layouts and publishing content-refresh products to syndication partners. EC Admin UI provides internal tooling for managing Enhanced Content operations.",
+    "category": "Product",
+    "links": [{"url": "https://github.com/salsify/ec-admin-ui", "description": "EC Admin UI Repository"}]
+  },
+  {
+    "acronym": "dandelion",
+    "name": "Dandelion",
+    "description": "A backend service that EC Admin UI connects to for Enhanced Content administration. Provides GraphQL endpoints for admin operations. Part of the Enhanced Content infrastructure.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/ec-admin-ui", "description": "Referenced in EC Admin UI"}]
+  },
+  {
+    "acronym": "brand-space",
+    "name": "Brand Space",
+    "description": "A backend service that EC Admin UI connects to via GraphQL. Part of the Enhanced Content infrastructure that works alongside dandelion to support EC administration workflows.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/ec-admin-ui", "description": "Referenced in EC Admin UI"}]
+  },
+  {
+    "acronym": "commerce-ui",
+    "name": "Commerce UI",
+    "description": "The frontend client for commerce features. EC Admin UI can be deployed to staging with custom revisions by appending client_revision[commerce-ui] query parameter to URLs.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/ec-admin-ui", "description": "Referenced in EC Admin UI deployment docs"}]
+  },
+  {
+    "acronym": "habanero",
+    "name": "Habanero",
+    "description": "Salsify's internal UI component library and design system. Used by EC Admin UI and other Salsify frontend applications for consistent styling and components.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/ec-admin-ui", "description": "Used as dependency in EC Admin UI"}]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "acronym": "con-shopify",
+    "name": "Shopify Connector",
+    "description": "Connector service that uses Shopify's GraphQL API to publish product data from Salsify to Shopify shops. Handles bulk product publishing, category mapping, OAuth authentication with Shopify stores, and GDPR webhook compliance. Part of the D2C (Direct to Consumer) connector ecosystem, the service receives publication payloads from Syndication Gateway and supports canary testing of new Shopify API versions.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "D2CXM",
+    "name": "D2C Experience Management Team",
+    "description": "The Salsify engineering team responsible for Direct-to-Consumer (D2C) connector services including the Shopify connector. Manages alerts, monitors production systems, and can be reached via Slack at #team-network-core. Maintains the con-shopify service and related D2C infrastructure.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"},
+      {"url": "https://salsify.atlassian.net/wiki/spaces/D2CXM", "description": "D2CXM Confluence Space"}
+    ]
+  },
+  {
+    "acronym": "BulkRequest",
+    "name": "Bulk Request (Shopify)",
+    "description": "A Shopify GraphQL API mechanism used by con-shopify to batch multiple product operations into a single request. Configured via shopify_api.bulk_product_batch_size to control batch sizes. The connector polls for completion status at intervals defined by shopify_api.bulk_polling_interval.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"}]
+  },
+  {
+    "acronym": "Cloud File Service",
+    "name": "Cloud File Service",
+    "description": "A Salsify microservice that provides a Secrets API for securely storing and retrieving sensitive credentials. Used by con-shopify to manage Shopify Access Tokens for authenticated store connections. Must be running locally for full Shopify App development and testing.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/cloud-file-service", "description": "GitHub Repository"},
+      {"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository (context)"}
+    ]
+  },
+  {
+    "acronym": "PublicationManager",
+    "name": "Publication Manager",
+    "description": "A component in con-shopify responsible for enqueuing publication jobs to the appropriate worker queues. Determines whether publications should be processed by the main worker or the canary worker based on store domain configuration, enabling A/B testing of new Shopify API versions.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"}]
+  },
+  {
+    "acronym": "CanaryHelper",
+    "name": "Canary Helper",
+    "description": "A utility module in con-shopify (lib/canary_helper.rb) that manages the CANARY_DOMAINS constant to determine which Shopify stores should use the canary API version. Enables gradual rollout testing of new Shopify GraphQL API versions before full deployment.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"}]
+  },
+  {
+    "acronym": "sal",
+    "name": "Salsify CLI (sal)",
+    "description": "The Salsify command-line interface tool used for development operations. Provides commands like 'sal devenv start' for managing development containers, 'sal k8s elevate' for Kubernetes access, 'sal k8s run-cmd' for running commands in pods, and 'sal configure' for setup. Essential for con-shopify local development.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository (context)"}]
+  },
+  {
+    "acronym": "d2cxm",
+    "name": "D2CXM Development Group",
+    "description": "A development environment group identifier used with 'sal devenv start -g d2cxm' to start the required container dependencies (including s3mock) for D2C connector development. Ensures proper local development setup for services like con-shopify.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"}]
+  },
+  {
+    "acronym": "Target Schema",
+    "name": "Target Schema (Shopify)",
+    "description": "A structured definition of the product data format required by Shopify. Con-shopify can generate target schemas using 'rake target_schema:generate' and import them into Dandelion using 'rake target_schema:import'. The schema defines how Salsify product attributes map to Shopify product fields.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"}]
+  },
+  {
+    "acronym": "infra-mgmt",
+    "name": "Infrastructure Management Platform",
+    "description": "Internal Salsify platform for managing service deployments and triggering manual deployments to staging or production environments. Accessible at infra-mgmt.ops.salsify.com/services/con-shopify for the Shopify connector service.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://infra-mgmt.ops.salsify.com/services/con-shopify/", "description": "con-shopify Infrastructure Management"},
+      {"url": "https://github.com/salsify/con-shopify", "description": "con-shopify Repository"}
+    ]
+  }
+]

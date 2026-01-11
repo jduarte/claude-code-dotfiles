@@ -1,0 +1,107 @@
+[
+  {
+    "acronym": "salsify_kafka",
+    "name": "Salsify Kafka",
+    "description": "A Ruby library for producing and consuming messages from Kafka. Consists of two major components: an actor framework for easily consuming messages with simplified concurrency control, and an event publisher for publishing events to Kafka. Both components require messages to be modeled as avromatic models.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Actor Framework",
+    "name": "Actor Framework",
+    "description": "A component of salsify_kafka that allows clients to asynchronously process Kafka messages while ensuring that messages for a given actor are processed serially and in order. Handles organization-level worker fairness, retrying failed jobs with exponential back-off, long-running jobs that exceed Kafka session timeout, and metrics/monitoring. Uses Redis for message queuing and coordination.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Event Publisher",
+    "name": "Event Publisher",
+    "description": "A component of salsify_kafka that provides methods for publishing messages to Kafka. Offers two modes: Transactional Event Publisher (provides a transactional Postgres gateway for atomically updating database state and enqueuing Kafka messages) and Direct Kafka Event Publishing (higher throughput option that bypasses the transactional gateway).",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Message Router",
+    "name": "Message Router",
+    "description": "A component of the salsify_kafka Actor Framework that pushes messages from Kafka into an actor's pending events table. Can be run via the rake task 'actors:route_messages'. Handles consumer group coordination and message distribution to appropriate actors.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Actor Worker",
+    "name": "Actor Worker",
+    "description": "A component of the salsify_kafka Actor Framework that processes pending events for a given actor. Delegates to client-provided handlers for performing the real work of processing messages. Can be run via the rake task 'actors:work'.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Broken Actor",
+    "name": "Broken Actor",
+    "description": "In the salsify_kafka Actor Framework, an actor that has failed to process an event after all retry attempts (default 8 attempts/80 minutes with exponential back-off). Broken actors will not process any events and require manual intervention to unbreak them using rake tasks.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Batched Actor",
+    "name": "Batched Actor",
+    "description": "A variant of the salsify_kafka Actor class that processes a batch of messages for a single actor at a time instead of one message at a time. Handlers receive an array of events instead of a single event. Useful for bulk operations.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Cross-Actor Batching",
+    "name": "Cross-Actor Batching",
+    "description": "A feature in the salsify_kafka Actor Framework that allows bulk operations across all actors in each worker's batch. Useful when you have a large number of actors or distinct event types and need to efficiently interact with external systems through load_batch and flush_batch hooks.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "NonBreakingError",
+    "name": "Non-Breaking Error",
+    "description": "In the salsify_kafka Actor Framework, an error type that allows an actor to continue processing subsequent events after a failure instead of becoming broken. Useful for scenarios like external webhooks that may only succeed for certain payloads.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "avromatic",
+    "name": "Avromatic",
+    "description": "A related Salsify gem that salsify_kafka depends on. All messages published to Kafka must be modeled as avromatic models with a system_message_id for idempotent message processing.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/avromatic", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "system_message_id",
+    "name": "System Message ID",
+    "description": "A unique identifier required on all messages published to Kafka in salsify_kafka. Enables idempotent message processing by ensuring duplicate messages with the same ID are ignored within the retention window.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_kafka", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "metrics_reporter",
+    "name": "Metrics Reporter",
+    "description": "A Salsify gem that salsify_kafka integrates with for emitting metrics and transactions to New Relic. Provides visibility into actor framework and event publisher operations.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/metrics_reporter", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "exception_reporter",
+    "name": "Exception Reporter",
+    "description": "A Salsify gem that salsify_kafka integrates with for reporting exceptions and errors that occur during Kafka message processing.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/exception_reporter", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "salsify_avro",
+    "name": "Salsify Avro",
+    "description": "A Salsify library that provides the uniquely_identifiable_value Avro record type used for ensuring messages have a system_message_id for idempotent processing in salsify_kafka.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/salsify_avro", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "rails-multitenant",
+    "name": "Rails Multitenant",
+    "description": "A Salsify gem that the salsify_kafka Actor Framework integrates with to automatically set the current organization ID for handlers during message processing.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/rails-multitenant", "description": "GitHub Repository"}]
+  }
+]

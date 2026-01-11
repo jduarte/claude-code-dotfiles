@@ -1,0 +1,26 @@
+[
+  {
+    "acronym": "target-schema-importer",
+    "name": "Target Schema Importer",
+    "description": "A Ruby gem that simplifies the process of importing new or existing Target Schemas into Salsify. It connects to the TS Validation Proxy service to perform imports, supporting both synchronous and asynchronous operations. Required parameters include target schema external ID, URL to the schema JSON, organization ID, and for new schemas: name and destination domain. Optional features include associating connector services, importing templates, and callback notifications.",
+    "category": "GitHub Repos",
+    "links": [
+      {
+        "url": "https://github.com/salsify/target-schema-importer",
+        "description": "GitHub Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "TS Validation Proxy",
+    "name": "Target Schema Validation Proxy",
+    "description": "An internal Salsify service that handles Target Schema validation and import operations. It provides authenticated endpoints for exporting and importing Target Schemas, exporting mappings, and associating Target Schemas with connector services. Access is controlled via auth tokens that specify allowed scripts (export_target_schema, import_target_schema, export_mappings_for_target_schema, associate_target_schema_connector_service) and allowed organizations.",
+    "category": "Services",
+    "links": [
+      {
+        "url": "https://ts-validation-proxy.internal.salsify.com",
+        "description": "Internal Service URL"
+      }
+    ]
+  }
+]

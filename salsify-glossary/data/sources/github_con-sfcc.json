@@ -1,0 +1,39 @@
+[
+  {
+    "acronym": "con-sfcc",
+    "name": "Salesforce Commerce Cloud Connector",
+    "description": "Connector service responsible for generating XML files that can be imported to Salesforce Commerce Cloud (SFCC). These XML files allow users to import their product data to SFCC to configure their storefronts. Part of the D2CXM team's portfolio.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/con-sfcc", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "SFCC",
+    "name": "Salesforce Commerce Cloud",
+    "description": "A cloud-based e-commerce platform by Salesforce that enables brands to create unified buying experiences across all channels. Salsify integrates with SFCC through the con-sfcc connector to publish product data via XML imports.",
+    "category": "Integrations",
+    "links": [
+      {"url": "https://github.com/salsify/con-sfcc", "description": "Salsify SFCC Connector"},
+      {"url": "https://salsify.atlassian.net/wiki/spaces/D2CXM/pages/258938765456/Spawn+a+SFCC+Sandbox", "description": "SFCC Sandbox Guide"}
+    ]
+  },
+  {
+    "acronym": "D2CXM",
+    "name": "Direct-to-Consumer Experience Management",
+    "description": "Salsify team and product area focused on direct-to-consumer commerce integrations. Owns connectors like con-sfcc for Salesforce Commerce Cloud. Related Slack channels include #team-d2cxm, #d2cxm-alerts, and #d2cxm-bugsnags.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://onenr.io/0Bj3yemnGwX", "description": "D2CXM Dashboard in New Relic"}
+    ]
+  },
+  {
+    "acronym": "TargetSchemas",
+    "name": "Target Schemas",
+    "description": "A component in the SFCC connector that handles schema imports. The connector exposes a REST API for enqueueing TargetSchemaImportJob operations, using JWT authentication that is organization-scoped.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/con-sfcc", "description": "GitHub Repository"}
+    ]
+  }
+]

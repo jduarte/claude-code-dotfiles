@@ -1,0 +1,30 @@
+[
+  {
+    "acronym": "con-u",
+    "name": "Con-U (Connector Universal)",
+    "description": "Universal connector service and target schema generator for publishing product data to retail channels. Provides the infrastructure to connect Salsify with various retailers and marketplaces including Amazon, Walmart, BigCommerce, Wayfair, Instacart, and many others. Manages the publish pipeline, channel configurations, and feedback handling.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/con-u", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "EURO-5",
+    "name": "EURO-5 (European Amazon Marketplaces)",
+    "description": "The five European Amazon marketplaces supported by Salsify's Amazon Seller Central connector: UK, France, Germany, Italy, and Spain. Uses a dedicated EU AWS account managed by the Ecosystem team.",
+    "category": "Amazon",
+    "links": [{"url": "https://github.com/salsify/con-u", "description": "Con-U Repository (context)"}]
+  },
+  {
+    "acronym": "dandelion",
+    "name": "Dandelion",
+    "description": "Salsify's main monolithic Rails application. Houses core functionality including target schema management, connector service configurations, and channel settings. Con-u interacts with dandelion for target schema setup and configuration.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/dandelion", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "ECO",
+    "name": "ECO (Ecosystem Team)",
+    "description": "The Salsify engineering team responsible for building and maintaining retail channel connectors and integrations. Manages AWS credentials, connector development, and retailer-specific implementations in con-u.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/con-u", "description": "Con-U Repository (context)"}]
+  }
+]

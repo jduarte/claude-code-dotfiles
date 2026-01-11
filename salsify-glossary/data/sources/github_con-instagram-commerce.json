@@ -1,0 +1,86 @@
+[
+  {
+    "acronym": "con-instagram-commerce",
+    "name": "Instagram Commerce Connector",
+    "description": "Connector service for managing shoppable products on Instagram. Powers content publish and orders/inventory syncing between Salsify and Facebook's commerce platform. Products are published to Facebook product catalogs where they can be used for Facebook/Instagram ads and shops.",
+    "category": "GitHub Repos",
+    "links": [
+      {
+        "url": "https://github.com/salsify/con-instagram-commerce",
+        "description": "GitHub Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "Facebook Catalog Direct",
+    "name": "Facebook Catalog Direct Target Schema",
+    "description": "A Salsify target schema generated and maintained by the con-instagram-commerce service. Powers product content publishes to Facebook/Instagram catalogs. Field requirements are defined in instagram_commerce_ts_dict.json.",
+    "category": "Target Schemas",
+    "links": [
+      {
+        "url": "https://github.com/salsify/con-instagram-commerce",
+        "description": "con-instagram-commerce Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "FB Business",
+    "name": "Facebook Business",
+    "description": "A Facebook Business Manager account that owns product catalogs and Commerce Merchant Settings. Users must have administrator privileges in the FB Business to grant Salsify the necessary access for product publishing and order/inventory syncing.",
+    "category": "Facebook Commerce",
+    "links": [
+      {
+        "url": "https://business.facebook.com/",
+        "description": "Facebook Business Manager"
+      }
+    ]
+  },
+  {
+    "acronym": "FB Catalog",
+    "name": "Facebook Product Catalog",
+    "description": "A Facebook product catalog where Salsify publishes products. Can be used for Facebook/Instagram ads and shops. Identified by Catalog ID and Catalog Name in channel settings.",
+    "category": "Facebook Commerce",
+    "links": [
+      {
+        "url": "https://www.facebook.com/business/help/1275400645914358",
+        "description": "Facebook Product Catalogs Help"
+      }
+    ]
+  },
+  {
+    "acronym": "CMS ID",
+    "name": "Commerce Merchant Settings ID",
+    "description": "The ID of the Facebook Commerce Merchant Settings object (also known as Commerce Account) where orders are placed. Required in channel settings if using orders/inventory syncing with Facebook/Instagram commerce.",
+    "category": "Facebook Commerce",
+    "links": [
+      {
+        "url": "https://github.com/salsify/con-instagram-commerce",
+        "description": "con-instagram-commerce Repository"
+      }
+    ]
+  },
+  {
+    "acronym": "OBO Flow",
+    "name": "On-Behalf-Of Flow",
+    "description": "Facebook's authentication flow used by Salsify connectors to act on behalf of a user. After user authorization, Salsify uses this flow to ensure a System User exists in the FB Business with the necessary access to publish products and sync orders/inventory.",
+    "category": "Facebook Commerce",
+    "links": [
+      {
+        "url": "https://developers.facebook.com/docs/marketing-api/business-manager/guides/on-behalf-of/",
+        "description": "Facebook On-Behalf-Of Documentation"
+      }
+    ]
+  },
+  {
+    "acronym": "FB System User",
+    "name": "Facebook System User",
+    "description": "A Facebook account created in a Business Manager that Salsify uses to interact with the Facebook API. Generated during channel setup via the On-Behalf-Of flow. Has an associated access token for API authentication.",
+    "category": "Facebook Commerce",
+    "links": [
+      {
+        "url": "https://developers.facebook.com/docs/marketing-api/system-users/",
+        "description": "Facebook System Users Documentation"
+      }
+    ]
+  }
+]

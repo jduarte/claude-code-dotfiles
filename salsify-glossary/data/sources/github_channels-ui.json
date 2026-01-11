@@ -1,0 +1,47 @@
+[
+  {
+    "acronym": "channels-ui",
+    "name": "Channels UI",
+    "description": "Micro-frontend (uFE) for the Channels experience in Salsify. Provides the user interface for channel management, publishing configuration, and target attribute mappings. Built with Ember and supports extension points for other teams (GDSN, Sites/DXP) via ui-alchemy.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/channels-ui", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "IMP",
+    "name": "Infrastructure Management Portal",
+    "description": "Internal Salsify tool for managing infrastructure, deployments, and microfrontend client revisions across environments (staging, production). Accessible via VPN at infra-mgmt.ops.salsify.com.",
+    "category": "Engineering",
+    "links": [{"url": "https://infra-mgmt.ops.salsify.com", "description": "Infrastructure Management Portal"}]
+  },
+  {
+    "acronym": "ui-alchemy",
+    "name": "UI Alchemy",
+    "description": "Salsify library that enables extension points for micro-frontends, allowing other teams to extend core UI functionality without modifying the host codebase. Used by channels-ui to support features from teams like activation accelerators, GDSN, and Sites/DXP.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/ui-alchemy", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "Habanero",
+    "name": "Habanero",
+    "description": "Salsify's modern UI component library and design system for building frontend applications. Used as the standard for modernizing legacy Backbone and classic Ember components in Salsify micro-frontends.",
+    "category": "Engineering"
+  },
+  {
+    "acronym": "Dandelion",
+    "name": "Dandelion",
+    "description": "Salsify's main backend service that provides REST and GraphQL APIs for the platform. Serves as the primary API backend for micro-frontends like channels-ui, running on localhost:5000 during local development.",
+    "category": "Engineering"
+  },
+  {
+    "acronym": "ECP",
+    "name": "Enhanced Content Provider",
+    "description": "Service providing enhanced content capabilities. Channels-ui communicates with the ECP Gateway GraphQL API for enhanced content features.",
+    "category": "Engineering"
+  },
+  {
+    "acronym": "Puddle",
+    "name": "Puddle",
+    "description": "Salsify service with a GraphQL API used by channels-ui. One of the backend services that channels-ui communicates with alongside Dandelion, ECP Gateway, and Catalog Management.",
+    "category": "Engineering"
+  }
+]

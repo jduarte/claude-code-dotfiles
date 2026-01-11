@@ -1,0 +1,63 @@
+[
+  {
+    "acronym": "con-brandbank",
+    "name": "Brandbank Connector",
+    "description": "Connector service that enables Salsify customers to submit product data to Brandbank. Dynamically creates zip packages containing XML and image URLs to be sent to Brandbank via their API. Supports both UK and US (Mars-specific) target markets with asynchronous feedback processing.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/con-brandbank", "description": "GitHub Repository"},
+      {"url": "https://salsify.atlassian.net/wiki/spaces/CUS/pages/1107853321/Brandbank+Troubleshooting+Guide", "description": "Troubleshooting Guide"}
+    ]
+  },
+  {
+    "acronym": "Brandbank",
+    "name": "Brandbank",
+    "description": "A product content syndication platform that receives product data from Salsify via direct connection. Brandbank provides APIs for data submission and asynchronous feedback, using XML-based data schemas with lookups for data attributes.",
+    "category": "Integrations",
+    "links": [
+      {"url": "https://api.brandbank.com/svc/dataimport/lookups.xml", "description": "Brandbank Lookups API"},
+      {"url": "https://imp.brandbank.com/api/dataModel", "description": "Brandbank Data Model API"}
+    ]
+  },
+  {
+    "acronym": "RICK",
+    "name": "Retail Integration Connector Knowledgebase",
+    "description": "A set of standardized metadata fields used to document connector capabilities in Salsify. Includes attributes like transmission method, payload format, data schema, response feedback, image delivery method, update model, and bulk support.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/con-brandbank/blob/master/docs/overview.md", "description": "Example RICK metadata in connector docs"}
+    ]
+  },
+  {
+    "acronym": "TS",
+    "name": "Target Schema",
+    "description": "A JSON schema definition that describes the data structure and fields expected by a connector destination. Target schemas are generated from data model files and lookup files, defining the mapping between Salsify product attributes and the destination system's requirements.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/con-brandbank/blob/master/docs/target_schema.md", "description": "Target Schema Documentation"}
+    ]
+  },
+  {
+    "acronym": "Dandelion",
+    "name": "Dandelion",
+    "description": "Salsify's internal messaging and batch processing system that handles connector service communication. Provides channel configurations, batch handling, and feedback routing between Salsify and external connector services.",
+    "category": "Engineering",
+    "links": []
+  },
+  {
+    "acronym": "GUID",
+    "name": "Globally Unique Identifier (Brandbank)",
+    "description": "In the Brandbank connector context, a channel setting provided by Brandbank that defines the target environment (Staging or Production) on Brandbank's side for data submission.",
+    "category": "Integrations",
+    "links": []
+  },
+  {
+    "acronym": "Lookups",
+    "name": "Brandbank Lookups",
+    "description": "XML files containing data attribute definitions and IDs used by Brandbank's Ingestion Engine. These lookups define valid values for product attributes and are essential for data validation. They refresh daily and should be updated regularly in connector systems.",
+    "category": "Integrations",
+    "links": [
+      {"url": "http://download.brandbank.com/developer/lookups", "description": "Brandbank Lookups Download"}
+    ]
+  }
+]

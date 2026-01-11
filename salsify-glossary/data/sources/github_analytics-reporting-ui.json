@@ -1,0 +1,30 @@
+[
+  {
+    "acronym": "analytics-reporting-ui",
+    "name": "Analytics Reporting UI",
+    "description": "An Ember engine for in-app analytics reporting at Salsify. Provides dashboards and reporting interfaces including Buy Box analytics. Integrates with Dandelion for data and uses ember-cli-mirage for mock APIs during development. Runs on port 6404 locally and features continuous deployment for production.",
+    "category": "GitHub Repos",
+    "relatedTerms": ["dandelion", "Buy Box"],
+    "links": [
+      {"url": "https://github.com/salsify/analytics-reporting-ui", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "ui-user-tracking",
+    "name": "UI User Tracking",
+    "description": "An Ember addon library for tracking user interaction events across Salsify UI applications. Used by analytics-reporting-ui and other front-end micro apps to capture user activity data.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/ui-user-tracking", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "ui-error-reporting",
+    "name": "UI Error Reporting",
+    "description": "An Ember addon library for capturing and reporting unhandled errors in Salsify UI applications. Integrates with BugSnag for error tracking and monitoring across front-end micro apps.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/ui-error-reporting", "description": "GitHub Repository"}
+    ]
+  }
+]

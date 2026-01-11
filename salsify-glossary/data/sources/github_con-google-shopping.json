@@ -1,0 +1,55 @@
+[
+  {
+    "acronym": "con-google-shopping",
+    "name": "Google Shopping Connector",
+    "description": "Connector service that sends mapped product data from Salsify to Google Shopping (Merchant or Manufacturer) via direct push to Google's FTP/SFTP or API. Only Google Merchant supports API publish. Deployed on Kubernetes.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/con-google-shopping", "description": "GitHub Repository"},
+      {"url": "https://salsify.atlassian.net/wiki/spaces/CS/pages/27787271/Google+Shopping+Manufacturer+FTP", "description": "Support Troubleshooting Guide"}
+    ]
+  },
+  {
+    "acronym": "GMC",
+    "name": "Google Merchant Center",
+    "description": "Google's platform for managing product data feeds for Google Shopping ads and free listings. The con-google-shopping connector publishes product data to GMC via API or FTP/SFTP.",
+    "category": "Channels",
+    "links": [
+      {"url": "https://merchants.google.com/", "description": "Google Merchant Center"}
+    ]
+  },
+  {
+    "acronym": "Google Shopping Merchant",
+    "name": "Google Shopping Merchant",
+    "description": "Channel type in Salsify for publishing product data to Google Merchant Center. Supports both FTP/SFTP and API delivery methods. Uses the Google Shopping Connector service.",
+    "category": "Channels",
+    "links": [
+      {"url": "https://salsify.atlassian.net/wiki/display/CS/Google+Shopping+Merchant", "description": "Wiki Documentation"}
+    ]
+  },
+  {
+    "acronym": "Google Shopping Manufacturer",
+    "name": "Google Shopping Manufacturer",
+    "description": "Channel type in Salsify for publishing product data to Google Manufacturer Center. Uses FTP/SFTP for delivery (pull-based instead of direct push). Legacy approach still used by some customers.",
+    "category": "Channels",
+    "links": [
+      {"url": "https://salsify.atlassian.net/wiki/spaces/CS/pages/27787271/Google+Shopping+Manufacturer+FTP", "description": "Troubleshooting Guide"}
+    ]
+  },
+  {
+    "acronym": "RICK",
+    "name": "Connector Integration Checklist",
+    "description": "A standardized checklist/framework used to document connector capabilities and configurations. Includes categories like transmission method, payload format, data schema, schema updates, response feedback, async feedback, human review, dry run support, image delivery, business rules, update model, and bulk support.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/con-google-shopping/blob/master/docs/overview.md", "description": "Example RICK documentation"}
+    ]
+  },
+  {
+    "acronym": "TSV",
+    "name": "Tab-Separated Values",
+    "description": "A file format used by the Google Shopping connector to serialize product data for publishing. The TSV serializer supports publishing variant information to Google.",
+    "category": "Engineering",
+    "links": []
+  }
+]

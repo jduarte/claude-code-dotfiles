@@ -1,0 +1,40 @@
+[
+  {
+    "acronym": "enhanced-content-ui",
+    "name": "Enhanced Content UI",
+    "description": "Monorepo containing all packages that power the Enhanced Content feature set at Salsify. Includes the Enhanced Content Builder (microFE), Enhanced Content Renderer, Exclaim components, and supporting tools for creating mobile-responsive enhanced layouts.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/enhanced-content-ui", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "EC",
+    "name": "Enhanced Content",
+    "description": "Salsify's module that enables creating mobile-responsive enhanced layouts and publishing content-refresh products to syndication partners including Amazon and Walmart. The EC system includes a builder UI, renderer, and component library.",
+    "category": "Product",
+    "links": [{"url": "https://github.com/salsify/enhanced-content-ui", "description": "Enhanced Content UI Repository"}]
+  },
+  {
+    "acronym": "Exclaim",
+    "name": "Exclaim",
+    "description": "A Salsify framework for building dynamic, configurable UI components. Exclaim components are used in Enhanced Content to create layouts that can be built in the EC Builder and rendered by the EC Renderer. Based on ember-exclaim.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/enhanced-content-ui", "description": "Enhanced Content UI Repository"},
+      {"url": "https://github.com/salsify/ember-exclaim", "description": "Ember Exclaim Repository"}
+    ]
+  },
+  {
+    "acronym": "microFE",
+    "name": "Micro Frontend",
+    "description": "A frontend architecture pattern used at Salsify where small, independent frontend applications (micro frontends) are composed into a larger application. The Enhanced Content UI Builder is implemented as a microFE that integrates into the main Salsify platform.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/enhanced-content-ui", "description": "Enhanced Content UI Repository"}]
+  },
+  {
+    "acronym": "ec-snapshot-wrapper",
+    "name": "Enhanced Content Snapshot Wrapper",
+    "description": "An Ember app that provides a lightweight UI shell for rendering and testing Enhanced Content product snapshots in isolation. Features include snapshot metadata display, iframe embedding, locale support, and desktop/mobile view toggling.",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/enhanced-content-ui/tree/master/@salsify/ec-snapshot-wrapper", "description": "Package in Enhanced Content UI Repository"}]
+  }
+]

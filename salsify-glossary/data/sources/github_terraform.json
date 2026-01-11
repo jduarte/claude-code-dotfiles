@@ -1,0 +1,44 @@
+[
+  {
+    "acronym": "terraform",
+    "name": "Terraform Definitions",
+    "description": "Repository containing Terraform code for managing cloud resources for all managed Amazon and Azure accounts at Salsify. Includes modules for AWS/Azure infrastructure, microservices, data pipelines, and SXM (SupplierXM) environments. Organized into accounts/ (cloud account-level config), environments/ (Infrastructure Management Platform environments), services/ (service instance resources), and modules/ (reusable golden path configurations).",
+    "category": "GitHub Repos",
+    "links": [{"url": "https://github.com/salsify/terraform", "description": "GitHub Repository"}]
+  },
+  {
+    "acronym": "IMP",
+    "name": "Infrastructure Management Platform",
+    "description": "Salsify's internal platform for managing infrastructure environments and services. Referenced in the terraform repository where environments/ directories map to IMP environments and services/ directories contain IMP service definitions with their cloud resources.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/terraform", "description": "Terraform Repository"}]
+  },
+  {
+    "acronym": "tprod",
+    "name": "terraform-production CLI",
+    "description": "Command-line tool for running Terraform commands with the appropriate environment configuration and provider tokens. Located in tools/terraform-production within the terraform repository. Commonly symlinked to ~/.local/bin/tprod for easier access.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/terraform", "description": "Terraform Repository"}]
+  },
+  {
+    "acronym": "SXM",
+    "name": "Supply Experience Management (Terraform)",
+    "description": "In the terraform context, SXM refers to Azure-based infrastructure modules for SupplierXM environments. Includes modules like sxm-asg (auto-scaling groups), sxm-lb (load balancers), sxm-vm (virtual machines), sxm-vnet (virtual networks), sxm-redis, sxm-environment, and sxm-storage. SXM environments include sxm-dev, sxm-int, sxm-ltg, sxm-meta, sxm-ppr, and sxm-prd.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/terraform", "description": "Terraform Repository"}]
+  },
+  {
+    "acronym": "Hosting Platform",
+    "name": "Hosting Platform",
+    "description": "Salsify's infrastructure team responsible for managing cloud infrastructure. Owns default PagerDuty services for microservice alerts ('Hosting Platform Production Infrastructure - Alerts' and 'Hosting Platform Production Infrastructure - Warnings'). Teams can configure their own PagerDuty services or route alerts to Hosting Platform's services.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/terraform", "description": "Terraform Repository"}]
+  },
+  {
+    "acronym": "ALK",
+    "name": "Alkemics Environment",
+    "description": "Environment variable (alk_env) used in SXM terraform modules to configure Alkemics-related infrastructure in Azure environments. Alkemics was acquired by Salsify and its infrastructure is managed through terraform SXM modules including alk-services application security groups.",
+    "category": "Engineering",
+    "links": [{"url": "https://github.com/salsify/terraform", "description": "Terraform Repository"}]
+  }
+]

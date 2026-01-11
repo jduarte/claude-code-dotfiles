@@ -1,0 +1,81 @@
+[
+  {
+    "acronym": "taser",
+    "name": "TASER - Target Schema Requests Backend",
+    "description": "A Ruby on Rails service that creates Target Schema request tickets in Zendesk and Jira. Handles the workflow when customers need to create or update Target Schemas via an in-app request form. Collects structured data (channel name, destination, purpose, Excel templates) and drives internal automation including ticket creation, repo matching, auto-build, and auto-deploy workflows. Proxied through Dandelion for JWT authentication.",
+    "category": "GitHub Repos",
+    "relatedTerms": ["dandelion", "Target Schema", "TSR", "Monorail"],
+    "links": [
+      {"url": "https://github.com/salsify/taser", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "TSR",
+    "name": "TSR - Target Schema Request (Engineering)",
+    "description": "A customer request to create or update a Target Schema. Submitted through an in-app form that collects channel name, destination, purpose, and Excel templates. Creates tickets in Zendesk, Jira, and Salesforce. The TSR system tracks request status through various stages: new, creating_case, found_jira, monorail_ingesting, repo_matching, auto_building, and auto_deploy statuses. Note: In Sales context, TSR means Technical Sales Representative.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "Target Schema", "ASE"],
+    "links": [
+      {"url": "https://github.com/salsify/taser", "description": "TASER Service"}
+    ]
+  },
+  {
+    "acronym": "Monorail",
+    "name": "Monorail - Target Schema Generator Repository",
+    "description": "A GitHub repository (Salsify-ts/monorail) that contains Target Schema builder configurations. TASER's MonorailIngest job attempts to match incoming Target Schema requests against existing builders in Monorail and ingest files into the correct subfolder. Part of the dream to have only two generator repos (Monorail and Auto-dump) and phase out legacy builders.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "TSR", "Target Schema", "autogen-dump"],
+    "links": [
+      {"url": "https://github.com/Salsify-ts/monorail", "description": "Monorail Repository"}
+    ]
+  },
+  {
+    "acronym": "autogen-dump",
+    "name": "Autogen-dump - Fallback Target Schema Generator",
+    "description": "A GitHub repository used as a fallback Target Schema generator when Monorail matching fails or when auto-build fails in another repo. Part of the two-repo generator strategy (Monorail and Auto-dump) intended to replace legacy generators.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "TSR", "Monorail", "Target Schema"]
+  },
+  {
+    "acronym": "ASE",
+    "name": "ASE - Application Solutions Engineer",
+    "description": "Salsify team members who work on Target Schema requests. TASER creates Jira tickets with ASE checklists and structured data to help them build Target Schemas based on customer requirements. The TSR workflow automates much of the data interpretation and copying that ASEs previously had to do manually.",
+    "category": "Customer Success",
+    "relatedTerms": ["taser", "TSR", "TSA", "Target Schema"]
+  },
+  {
+    "acronym": "TSA",
+    "name": "TSA - Target Schema Automation Team",
+    "description": "The team responsible for building and maintaining Target Schemas based on customer requests. TASER passes template information and structured data to the TSA team through Jira tickets. The system aims to eventually automate TS generation without human intervention.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "TSR", "ASE", "Target Schema"]
+  },
+  {
+    "acronym": "Expedite",
+    "name": "Expedite - Priority Target Schema Request",
+    "description": "A mechanism in TASER for customers to request priority handling of their Target Schema request. Organizations have expedite allowances that track how many expedited requests they can make per year. Expedited requests receive higher priority in Jira and may have different SLA handling.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "TSR"]
+  },
+  {
+    "acronym": "Auto-deploy",
+    "name": "Auto-deploy - Automated Target Schema Deployment",
+    "description": "A TASER workflow that automatically deploys a built Target Schema without human intervention. Runs after Auto-build succeeds. Includes test mode and live run phases. Sends notification emails on completion. Part of the goal to fully automate TS creation from customer request to deployment.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "TSR", "Auto-build", "Target Schema"]
+  },
+  {
+    "acronym": "Auto-build",
+    "name": "Auto-build - Automated Target Schema Building",
+    "description": "A TASER workflow that triggers GitHub Actions to automatically build a Target Schema from customer-provided Excel templates. Uses workflow dispatch to run builds in TS generator repositories. On success, creates a candidate Target Schema committed to the repo and can trigger Auto-deploy or manual testing.",
+    "category": "Engineering",
+    "relatedTerms": ["taser", "TSR", "Auto-deploy", "Target Schema", "Monorail"]
+  },
+  {
+    "acronym": "Readiness Report",
+    "name": "Readiness Report - Internal Target Schema Analysis",
+    "description": "An internal-use Target Schema request type in TASER. When the TSR purpose is 'Internal Readiness Report', it follows a special workflow. Used for analyzing product readiness against Target Schema requirements.",
+    "category": "Product",
+    "relatedTerms": ["taser", "TSR", "Target Schema"]
+  }
+]

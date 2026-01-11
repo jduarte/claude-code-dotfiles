@@ -1,0 +1,30 @@
+[
+  {
+    "acronym": "con-kroger-vip",
+    "name": "Kroger VIP Connector",
+    "description": "Connector that generates Excel files sent via email to customers for upload to Kroger. Uses category-specific Excel templates bundled into a zip file, with automated daily target schema generation. Integrates with 1WorldSync for data synchronization.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/con-kroger-vip", "description": "GitHub Repository"},
+      {"url": "https://salsify.atlassian.net/wiki/spaces/CUS/pages/1202192387/Kroger+VIP+Troubleshooting+Guide", "description": "Troubleshooting Guide"}
+    ]
+  },
+  {
+    "acronym": "VIP",
+    "name": "Vendor Item Portal (Kroger)",
+    "description": "Kroger's vendor item portal system where suppliers upload product information via Excel templates. The con-kroger-vip connector generates these Excel files for Salsify customers to upload to Kroger VIP.",
+    "category": "Retail",
+    "links": [
+      {"url": "https://github.com/salsify/con-kroger-vip", "description": "Kroger VIP Connector"}
+    ]
+  },
+  {
+    "acronym": "KrogerVIP",
+    "name": "Kroger VIP Queue Name",
+    "description": "The RabbitMQ queue name used by the Kroger VIP connector service for processing publication requests.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/con-kroger-vip", "description": "GitHub Repository"}
+    ]
+  }
+]

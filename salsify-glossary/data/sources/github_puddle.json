@@ -1,0 +1,182 @@
+[
+  {
+    "acronym": "puddle",
+    "name": "Puddle - GDSN Data Pool",
+    "description": "Salsify's GDSN Data Pool connector. Syndicates product data from Salsify (Dandelion) into the Global Data Synchronization Network. Handles item registration, publication, synchronization with retail partners, and validation against GS1 rules. Operates as a source data pool.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "GitHub Repository"},
+      {"url": "https://engineering.internal.salsify.com/docs/default/component/puddle/", "description": "Engineering Portal Documentation"}
+    ]
+  },
+  {
+    "acronym": "CIN",
+    "name": "Catalogue Item Notification",
+    "description": "A GDSN message type sent from a source data pool to notify a recipient data pool about product data. Triggered when publishing a product to GLNs (retail partners). Contains the full catalogue item data for synchronization.",
+    "category": "Product",
+    "related": ["CIC", "GDSN", "GLN", "Data Pool"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "CIC",
+    "name": "Catalogue Item Confirmation",
+    "description": "A GDSN message type received asynchronously in response to a CIN (Catalogue Item Notification). Contains the synchronization status and potential feedback/errors from the recipient data pool when attempting to synchronize data.",
+    "category": "Product",
+    "related": ["CIN", "GDSN", "GLN", "Data Pool"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Data Pool",
+    "name": "GDSN Data Pool",
+    "description": "A certified repository within the GDSN network that stores and exchanges product data between trading partners. Can operate as a source data pool (publishing data) or recipient data pool (receiving data). Salsify operates Puddle as a source data pool.",
+    "category": "Product",
+    "related": ["GDSN", "Source Data Pool", "Recipient Data Pool", "Global Registry"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Source Data Pool",
+    "name": "Source Data Pool",
+    "description": "A GDSN data pool that publishes/sends product data. Salsify's Puddle operates as a source data pool, sending catalogue item notifications to recipient data pools. Responsible for registering products with the Global Registry.",
+    "category": "Product",
+    "related": ["GDSN", "Data Pool", "Recipient Data Pool", "CIN"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Recipient Data Pool",
+    "name": "Recipient Data Pool",
+    "description": "A GDSN data pool that receives product data from source data pools. Subscribes to product data via subscriptions and receives CIN messages. Sends back CIC confirmations with synchronization status.",
+    "category": "Product",
+    "related": ["GDSN", "Data Pool", "Source Data Pool", "CIC"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Global Registry",
+    "name": "GS1 Global Registry",
+    "description": "The central GDSN component maintained by GS1 that tracks registered products (catalogue items). Source data pools register products with the Global Registry before they can be synchronized with trading partners.",
+    "category": "Product",
+    "related": ["GDSN", "GS1", "Data Pool", "GTIN"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Target Schema",
+    "name": "GDSN Target Schema",
+    "description": "Salsify's internal representation of GDSN attribute schemas. Generated from GS1-provided XSD files and scope files. Defines which attributes are available for different markets, retailers, and product categories. Generated via rake tasks in Puddle.",
+    "category": "Product",
+    "related": ["GDSN", "XSD", "Scope"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Scope",
+    "name": "GDSN Scope File",
+    "description": "CSV files in Puddle that define which GDSN attributes are required/available for specific markets (countries) or retailers. Examples include 'German Market - FMCG.csv' or 'Sephora.csv'. Used to generate the Target Schema.",
+    "category": "Product",
+    "related": ["Target Schema", "GDSN", "XPath"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "AVP",
+    "name": "Attribute Value Pair (GDSN)",
+    "description": "In GDSN context, refers to stringAVP (String Attribute Value Pair) - a flexible mechanism for adding custom attributes to GDSN messages. Used for retailer-specific or region-specific extensions to the standard GDSN schema.",
+    "category": "Product",
+    "related": ["GDSN", "Target Schema", "Custom Attributes"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "AS2",
+    "name": "Applicability Statement 2",
+    "description": "A specification for secure and reliable electronic data interchange over the internet. Used in GDSN for communication between data pools. Puddle uses AS2 proxy for sending messages to recipient data pools and the Global Registry.",
+    "category": "Product",
+    "related": ["GDSN", "Data Pool", "EDI"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "BMS",
+    "name": "Business Message Standard (GS1)",
+    "description": "GS1's standard for business messages in GDSN. BMS packages contain XML schemas (XSD files) that define the structure of GDSN messages. Updated quarterly by GS1 with new GDSN versions.",
+    "category": "Product",
+    "related": ["GDSN", "GS1", "XSD"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Content Owner GLN",
+    "name": "Content Owner GLN",
+    "description": "The Global Location Number identifying the party responsible for the product data in GDSN. Used in subscriptions to identify which products to synchronize. Different from the data recipient GLN (the retailer).",
+    "category": "Product",
+    "related": ["GLN", "GDSN", "Subscription"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Data Recipient GLN",
+    "name": "Data Recipient GLN",
+    "description": "The Global Location Number identifying the retail partner receiving product data in GDSN (e.g., Lowes, Walmart). Each publication targets specific data recipient GLNs. Used to create synchronizations.",
+    "category": "Product",
+    "related": ["GLN", "GDSN", "Publication"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Target Market",
+    "name": "Target Market (GDSN)",
+    "description": "In GDSN, identifies the geographic market where a product is sold. Combined with content owner GLN, GPC, and GTIN to determine subscription matching. Used to select appropriate scope files for schema validation.",
+    "category": "Product",
+    "related": ["GDSN", "GPC", "Scope"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Subscription",
+    "name": "GDSN Subscription",
+    "description": "A GDSN record received via Catalogue Item Subscription message from a recipient data pool. Specifies which products the recipient wants to receive, filtered by content owner GLN, target market, GPC, and/or GTIN. Triggers synchronization when publications match.",
+    "category": "Product",
+    "related": ["GDSN", "CIN", "Publication", "GLN"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "Synchronization",
+    "name": "GDSN Synchronization",
+    "description": "The process and record of exchanging product data between a source and recipient data pool in GDSN. Created when a subscription matches a publication. Tracked via CIN/CIC message exchange. Status includes feedback from the recipient.",
+    "category": "Product",
+    "related": ["GDSN", "CIN", "CIC", "Subscription"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  },
+  {
+    "acronym": "BPA",
+    "name": "Business Process Analyst (GDSN)",
+    "description": "Team or role responsible for converting GS1 validation rules from Excel spreadsheets to CSV format for import into Puddle. Also handles scope file creation and maintenance for GDSN schemas.",
+    "category": "Organization",
+    "related": ["GDSN", "Validation Rules"],
+    "links": [
+      {"url": "https://github.com/salsify/puddle", "description": "Puddle Repository"}
+    ]
+  }
+]

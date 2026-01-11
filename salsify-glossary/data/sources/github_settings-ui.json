@@ -1,0 +1,83 @@
+[
+  {
+    "acronym": "settings-ui",
+    "name": "Settings UI (Org Settings)",
+    "description": "Ember Micro-FrontEnd (MFE) for organization-level settings in Salsify. Provides interfaces for user management, roles, policies, user groups, activity reports, and security settings. Can be run in isolation with dummy data via shell-host or alongside Dandelion for full API integration. Uses GraphQL for backend communication with both Dandelion and Audits services. Features user tracking via MixPanel and error reporting through BugSnag.",
+    "category": "GitHub Repos",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "GitHub Repository"}
+    ]
+  },
+  {
+    "acronym": "Security Role",
+    "name": "Security Role",
+    "description": "A configurable permissions entity in Salsify's organization settings that defines what actions users can perform. Roles contain permission configurations for various entities like catalogs, channels, activity reports, and more. Users can be associated with one or more roles to grant them the corresponding permissions. Managed via the Settings UI roles section.",
+    "category": "Product",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Managed via Settings UI"}
+    ]
+  },
+  {
+    "acronym": "Security Policy",
+    "name": "Security Policy",
+    "description": "A Salsify access control mechanism that defines data-level restrictions for users. Policies contain security statements that control which products, digital assets, or locales users can access. Policies can be associated with users to restrict their data access scope. Also known as ACL (Access Control List) Policies. Managed via the Settings UI policies section.",
+    "category": "Product",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Managed via Settings UI"}
+    ]
+  },
+  {
+    "acronym": "User Group",
+    "name": "User Group",
+    "description": "A grouping mechanism in Salsify for organizing users together. User groups simplify user management by allowing bulk operations and easier organization of users with similar characteristics or responsibilities. Users can belong to multiple user groups. Managed via the Settings UI user-groups section.",
+    "category": "Product",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Managed via Settings UI"}
+    ]
+  },
+  {
+    "acronym": "Activity Report",
+    "name": "Activity Report",
+    "description": "A Salsify feature for generating reports on user activity and product record changes. Activity reports can be configured to track specific action types, event types, properties, channels, and users. Reports support scheduling, historical tracking, and filtering by various criteria. Data is stored and queried via the Audits service. Managed via the Settings UI activity-reports section.",
+    "category": "Product",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Managed via Settings UI"}
+    ]
+  },
+  {
+    "acronym": "2FA",
+    "name": "Two-Factor Authentication",
+    "description": "A security feature in Salsify that requires users to provide a second form of authentication beyond their password. Organization administrators can require two-factor authentication for all users in their organization via the security settings. Managed via the Settings UI security-settings section.",
+    "category": "Product",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Managed via Settings UI"}
+    ]
+  },
+  {
+    "acronym": "ACL",
+    "name": "Access Control List",
+    "description": "A permissions mechanism in Salsify that controls user access to specific data. ACL policies can restrict access to products, digital assets, and locales. ACL policy configurations can be exported and imported via CSV or XLSX files. Part of the broader security policy system managed via the Settings UI.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Managed via Settings UI"}
+    ]
+  },
+  {
+    "acronym": "User Reference Report",
+    "name": "User Reference Report",
+    "description": "A report in Salsify that shows references and associations for users within an organization. Can be initiated from the user index actions menu in the Settings UI. Useful for auditing user configurations and permissions.",
+    "category": "Product",
+    "links": [
+      {"url": "https://github.com/salsify/settings-ui", "description": "Available in Settings UI"}
+    ]
+  },
+  {
+    "acronym": "CD",
+    "name": "Continuous Deployment",
+    "description": "The settings-ui repository uses continuous deployment (CD) where any commits to the master branch are automatically deployed to production once CI passes. Staging deploys are done via Jenkins.",
+    "category": "Engineering",
+    "links": [
+      {"url": "https://jenkins.ops.salsify.com/job/staging-settings-ui-deploy/", "description": "Jenkins Staging Deploy"}
+    ]
+  }
+]

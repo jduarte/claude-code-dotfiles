@@ -1,0 +1,42 @@
+[
+  {
+    "acronym": "con-ebay-commerce",
+    "name": "eBay Commerce Connector",
+    "description": "Connector powering Salsify's eBay integration. This service powers both the content publish and inventory/orders integrations, enabling customers to sync product content, inventory, and orders with eBay marketplaces.",
+    "category": "GitHub Repos",
+    "links": [
+      {
+        "url": "https://github.com/salsify/con-ebay-commerce",
+        "description": "GitHub Repository"
+      },
+      {
+        "url": "https://help.salsify.com/help/ebay-connection-readiness-report-mapping",
+        "description": "eBay Connection Readiness Report Mapping (Knowledge Base)"
+      }
+    ]
+  },
+  {
+    "acronym": "EBAY_US",
+    "name": "eBay US Marketplace",
+    "description": "The primary eBay marketplace for the United States, used as a marketplace identifier (MARKETPLACE_ID) when generating eBay schemas and category mappings in the eBay Commerce Connector.",
+    "category": "Connectors",
+    "links": [
+      {
+        "url": "https://github.com/salsify/con-ebay-commerce",
+        "description": "eBay Commerce Connector"
+      }
+    ]
+  },
+  {
+    "acronym": "EBAY_MOTORS_US",
+    "name": "eBay Motors US Marketplace",
+    "description": "The eBay Motors marketplace for the United States, a specialized marketplace for automotive parts and vehicles with its own category structure and item aspects.",
+    "category": "Connectors",
+    "links": [
+      {
+        "url": "https://github.com/salsify/con-ebay-commerce",
+        "description": "eBay Commerce Connector"
+      }
+    ]
+  }
+]
