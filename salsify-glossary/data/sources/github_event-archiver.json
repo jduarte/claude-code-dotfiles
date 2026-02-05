@@ -1,9 +1,0 @@
-[
-  {
-    "acronym": "event-archiver",
-    "name": "Event Archiver",
-    "description": "A Java service that consumes Avro-encoded events from Kafka and writes them in batches to S3 for long-term storage. Supports configurable archive formats (Avro or JSON) and handles consumer group rebalancing. Used for archiving Salsify event streams for data retention and analytics.",
-    "category": "GitHub Repos",
-    "links": [{"url": "https://github.com/salsify/event-archiver", "description": "GitHub Repository"}]
-  }
-]
