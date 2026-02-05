@@ -4,7 +4,9 @@
       "command": "docker",
       "args": [
         "run", "-i", "--rm",
-        "-v", "/Users/jduarte/.claude/salsify-glossary/data:/app/data:ro",
+        "-e", "GLOSSARY_DATA_DIR=/app/data",
+        "-e", "GLOSSARY_DB_DIR=/app/db",
+        "-v", "/Users/jduarte/develop/salsify/salsify-glossary-mcp/data:/app/data:ro",
         "-v", "salsify-glossary-db:/app/db",
         "salsify-glossary-mcp-local"
       ]

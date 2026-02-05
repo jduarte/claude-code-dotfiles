@@ -4,10 +4,10 @@
     "pr-review-toolkit@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/jduarte/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/f1be96f0fb58",
-        "version": "f1be96f0fb58",
+        "installPath": "/Users/jduarte/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/27d2b86d72da",
+        "version": "27d2b86d72da",
         "installedAt": "2026-01-08T00:48:51.507Z",
-        "lastUpdated": "2026-01-09T09:43:56.691Z",
+        "lastUpdated": "2026-02-02T15:59:05.573Z",
         "gitCommitSha": "2eb5c045fb15edd058c1168566091fa1886959fa"
       }
     ],
