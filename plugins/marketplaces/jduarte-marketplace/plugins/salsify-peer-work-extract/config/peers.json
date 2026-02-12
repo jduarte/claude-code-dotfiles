@@ -1,0 +1,31 @@
+{
+  "peers": {
+    "ricardo-amendoeira": {
+      "displayName": "Ricardo Amendoeira",
+      "github": "ric2b",
+      "jiraAccountId": "5d39b39a6e55370bc308fef2",
+      "confluenceUsername": "5d39b39a6e55370bc308fef2",
+      "email": "ramendoeira@salsify.com",
+      "slackUserId": "ULZ07K284",
+      "team": "Network Core"
+    },
+    "ricardo-ribeiro": {
+      "displayName": "Ricardo Ribeiro",
+      "github": "ricardojcribeiro",
+      "jiraAccountId": "712020:ecf469d5-3b32-474b-80fe-8cf2def56d98",
+      "confluenceUsername": "712020:ecf469d5-3b32-474b-80fe-8cf2def56d98",
+      "email": "rribeiro@salsify.com",
+      "slackUserId": "U06U7065XU0",
+      "team": "Network Core"
+    },
+    "daniel-veloso": {
+      "displayName": "Daniel Veloso",
+      "github": "danielveloso09",
+      "jiraAccountId": "712020:325eae1b-6336-47fd-8350-e31680fd8c1c",
+      "confluenceUsername": "712020:325eae1b-6336-47fd-8350-e31680fd8c1c",
+      "email": "dveloso@salsify.com",
+      "slackUserId": "U06LDDTE738",
+      "team": "Network Core"
+    }
+  }
+}

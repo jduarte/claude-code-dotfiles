@@ -1,0 +1,8 @@
+{
+  "name": "salsify-peer-work-extract",
+  "version": "1.0.0",
+  "description": "Extract and analyze a peer's work contributions across GitHub, Jira, Confluence, Google Drive, and Slack for feedback assessments",
+  "author": {
+    "name": "Jose Duarte"
+  }
+}

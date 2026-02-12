@@ -7,9 +7,11 @@
         "-i",
         "--rm",
         "-v",
-        "mcp-gdrive:/gdrive-server",
+        "/Users/jduarte/.claude/gdrive-server-credentials.json:/gdrive-server/credentials.json",
+        "-v",
+        "/Users/jduarte/.claude/gdrive-credentials.json:/gdrive-server/gcp-oauth.keys.json",
         "-e",
-        "GDRIVE_CREDENTIALS_PATH=/Users/jduarte/.claude/gdrive-server-credentials.json",
+        "GDRIVE_CREDENTIALS_PATH=/gdrive-server/credentials.json",
         "mcp/gdrive"
       ]
     }

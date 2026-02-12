@@ -1,0 +1,37 @@
+{
+  "defaults": {
+    "monthsBack": 3,
+    "agents": ["github", "jira", "confluence", "gdrive", "slack"],
+    "execution": "parallel",
+    "githubOrg": "salsify"
+  },
+  "cache": {
+    "enabled": true,
+    "directory": "cache"
+  },
+  "agentConfig": {
+    "github": {
+      "searchScope": "org:salsify",
+      "includeReviews": true,
+      "includePRs": true
+    },
+    "jira": {
+      "statusFilter": "Done",
+      "includeSubtasks": true
+    },
+    "confluence": {
+      "includeModifications": true,
+      "includeCreated": true
+    },
+    "gdrive": {
+      "includeShared": false,
+      "fileTypes": ["document", "spreadsheet", "presentation"]
+    },
+    "slack": {
+      "searchLimit": 100,
+      "includeThreads": true,
+      "channelTypes": "public_channel,private_channel",
+      "excludeChannels": []
+    }
+  }
+}

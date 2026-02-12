@@ -4,10 +4,10 @@
     "pr-review-toolkit@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/jduarte/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/27d2b86d72da",
-        "version": "27d2b86d72da",
+        "installPath": "/Users/jduarte/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/2cd88e7947b7",
+        "version": "2cd88e7947b7",
         "installedAt": "2026-01-08T00:48:51.507Z",
-        "lastUpdated": "2026-02-02T15:59:05.573Z",
+        "lastUpdated": "2026-02-09T07:37:22.502Z",
         "gitCommitSha": "2eb5c045fb15edd058c1168566091fa1886959fa"
       }
     ],
@@ -38,6 +38,15 @@
         "installedAt": "2026-01-09T11:53:20.189Z",
         "lastUpdated": "2026-01-09T11:53:20.189Z",
         "gitCommitSha": "b9fc65b875887a483e4f41d825aac629e1f188e9"
+      }
+    ],
+    "salsify-peer-work-extract@jduarte-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/jduarte/.claude/plugins/cache/jduarte-marketplace/salsify-peer-work-extract/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-11T00:00:00.000Z",
+        "lastUpdated": "2026-02-11T00:00:00.000Z"
       }
     ]
   }

@@ -1,43 +1,11 @@
 {
   "env": {
     "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
     "OTEL_EXPORTER_OTLP_HEADERS": "Authorization=Bearer ${JELLYFISH_BEARER_TOKEN}",
     "OTEL_EXPORTER_OTLP_METRICS_ENDPOINT": "https://app.jellyfish.co/ingest-webhooks/claude/2",
     "OTEL_EXPORTER_OTLP_PROTOCOL": "http/json",
     "OTEL_METRICS_EXPORTER": "otlp"
-  },
-  "model": "opus",
-  "hooks": {
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "cat | jq -r '\"[\" + (now | strftime(\"%Y-%m-%d %H:%M:%S\")) + \"] USER: \" + .content' >> ~/claude_conversations.log"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "cat | jq -r '\"[\" + (now | strftime(\"%Y-%m-%d %H:%M:%S\")) + \"] TOOL: \" + .tool_name + \" (\" + (.tool_input | tostring) + \")\"' >> ~/claude_conversations.log"
-          }
-        ]
-      }
-    ],
-    "Stop": []
-  },
-  "enabledPlugins": {
-    "pr-review-toolkit@claude-plugins-official": true,
-    "safety-net@cc-marketplace": true,
-    "salsify-add-reviewer@jduarte-marketplace": true
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "node \"$HOME/.claude/hooks/statusline.js\""
   },
   "permissions": {
     "allow": [
@@ -218,9 +186,79 @@
       "Bash(git add:*)",
       "Bash(gh repo clone:*)",
       "Bash(gh pr diff:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(gh pr list)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr checks)",
+      "Bash(gh pr checks:*)",
+      "Bash(gh pr status)",
+      "Bash(gh pr status:*)",
+      "Bash(gh pr create)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr comment)",
+      "Bash(gh pr comment:*)",
+      "Bash(gh issue view)",
+      "Bash(gh issue view:*)",
+      "Bash(gh issue list)",
+      "Bash(gh issue list:*)",
+      "Bash(gh issue status)",
+      "Bash(gh issue status:*)",
+      "Bash(gh repo view)",
+      "Bash(gh repo view:*)",
+      "Bash(gh run list)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view)",
+      "Bash(gh run view:*)",
+      "Bash(gh workflow list)",
+      "Bash(gh workflow list:*)",
+      "Bash(gh release list)",
+      "Bash(gh release list:*)",
+      "Bash(gh release view)",
+      "Bash(gh release view:*)",
+      "Bash(gh search repos)",
+      "Bash(gh search repos:*)",
+      "Bash(gh search issues)",
+      "Bash(gh search issues:*)",
+      "Bash(gh search prs)",
+      "Bash(gh search prs:*)",
+      "Bash(curl)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
+  },
+  "model": "opus",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | jq -r '\"[\" + (now | strftime(\"%Y-%m-%d %H:%M:%S\")) + \"] USER: \" + .content' >> ~/claude_conversations.log"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | jq -r '\"[\" + (now | strftime(\"%Y-%m-%d %H:%M:%S\")) + \"] TOOL: \" + .tool_name + \" (\" + (.tool_input | tostring) + \")\"' >> ~/claude_conversations.log"
+          }
+        ]
+      }
+    ],
+    "Stop": []
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"$HOME/.claude/hooks/statusline.js\""
+  },
+  "enabledPlugins": {
+    "pr-review-toolkit@claude-plugins-official": true,
+    "safety-net@cc-marketplace": true,
+    "salsify-add-reviewer@jduarte-marketplace": true,
+    "salsify-peer-work-extract@jduarte-marketplace": true
   }
 }

@@ -1,5 +1,66 @@
 # Changelog
 
+## 2.1.39
+
+- Added guard against launching Claude Code inside another Claude Code session
+- Fixed Agent Teams using wrong model identifier for Bedrock, Vertex, and Foundry customers
+- Fixed a crash when MCP tools return image content during streaming
+- Fixed /resume session previews showing raw XML tags instead of readable command names
+- Improved model error messages for Bedrock/Vertex/Foundry users with fallback suggestions
+- Fixed plugin browse showing misleading "Space to Toggle" hint for already-installed plugins
+- Fixed hook blocking errors (exit code 2) not showing stderr to the user
+- Added `speed` attribute to OTel events and trace spans for fast mode visibility
+- Fixed /resume showing interrupt messages as session titles
+- Fixed Opus 4.6 launch announcement showing for Bedrock/Vertex/Foundry users
+- Improved error message for many-image dimension limit errors with /compact suggestion
+- Improved terminal rendering performance
+- Fixed fatal errors being swallowed instead of displayed
+- Fixed process hanging after session close
+- Fixed character loss at terminal screen boundary
+- Fixed blank lines in verbose transcript view
+
+## 2.1.38
+
+- Fixed VS Code terminal scroll-to-top regression introduced in 2.1.37
+- Fixed Tab key queueing slash commands instead of autocompleting
+- Fixed bash permission matching for commands using environment variable wrappers
+- Fixed text between tool uses disappearing when not using streaming
+- Fixed duplicate sessions when resuming in VS Code extension
+- Improved heredoc delimiter parsing to prevent command smuggling
+- Blocked writes to `.claude/skills` directory in sandbox mode
+
+## 2.1.37
+
+- Fixed an issue where /fast was not immediately available after enabling /extra-usage
+
+## 2.1.36
+
+- Fast mode is now available for Opus 4.6. Learn more at https://code.claude.com/docs/en/fast-mode
+
+## 2.1.34
+
+- Fixed a crash when agent teams setting changed between renders
+- Fixed a bug where commands excluded from sandboxing (via `sandbox.excludedCommands` or `dangerouslyDisableSandbox`) could bypass the Bash ask permission rule when `autoAllowBashIfSandboxed` was enabled
+
+## 2.1.33
+
+- Fixed agent teammate sessions in tmux to send and receive messages
+- Fixed warnings about agent teams not being available on your current plan
+- Added `TeammateIdle` and `TaskCompleted` hook events for multi-agent workflows
+- Added support for restricting which sub-agents can be spawned via `Task(agent_type)` syntax in agent "tools" frontmatter
+- Added `memory` frontmatter field support for agents, enabling persistent memory with `user`, `project`, or `local` scope
+- Added plugin name to skill descriptions and `/skills` menu for better discoverability
+- Fixed an issue where submitting a new message while the model was in extended thinking would interrupt the thinking phase
+- Fixed an API error that could occur when aborting mid-stream, where whitespace text combined with a thinking block would bypass normalization and produce an invalid request
+- Fixed API proxy compatibility issue where 404 errors on streaming endpoints no longer triggered non-streaming fallback
+- Fixed an issue where proxy settings configured via `settings.json` environment variables were not applied to WebFetch and other HTTP requests on the Node.js build
+- Fixed `/resume` session picker showing raw XML markup instead of clean titles for sessions started with slash commands
+- Improved error messages for API connection failures — now shows specific cause (e.g., ECONNREFUSED, SSL errors) instead of generic "Connection error"
+- Errors from invalid managed settings are now surfaced
+- VSCode: Added support for remote sessions, allowing OAuth users to browse and resume sessions from claude.ai
+- VSCode: Added git branch and message count to the session picker, with support for searching by branch name
+- VSCode: Fixed scroll-to-bottom under-scrolling on initial session load and session switch
+
 ## 2.1.32
 
 - Claude Opus 4.6 is now available!

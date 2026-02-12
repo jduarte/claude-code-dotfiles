@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "node",
+      "args": ["/Users/jduarte/Desktop/C2/Q1-2026/slack-mcp-server/src/server.js"]
+    }
+  }
+}

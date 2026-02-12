@@ -15,6 +15,9 @@ stats-cache.json
 paste-cache/**
 usage-data/**
 
+tasks/**
+teams/**
+
 # Analytics and telemetry
 statsig/
 

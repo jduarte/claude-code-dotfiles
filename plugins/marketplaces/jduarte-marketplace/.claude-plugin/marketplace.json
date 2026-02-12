@@ -9,6 +9,11 @@
       "name": "salsify-add-reviewer",
       "description": "Comprehensive ADD (Architecture Design Document) review using multiple specialized agents running in parallel",
       "source": "./plugins/salsify-add-reviewer"
+    },
+    {
+      "name": "salsify-peer-work-extract",
+      "description": "Extract and analyze a peer's work contributions across GitHub, Jira, Confluence, and Google Drive for feedback assessments",
+      "source": "./plugins/salsify-peer-work-extract"
     }
   ]
 }
